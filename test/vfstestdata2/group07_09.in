@@ -1,0 +1,9 @@
+createvfs vfs 1024
+deletedir /dir
+mountvfs
+mountvfs vfs
+deletedir /dir
+makedir dir
+makedir / dir
+deletedir dir
+copyfile dir /input.txt

@@ -1,0 +1,28 @@
+unmountvfs testfile2
+makedir / file1
+mountvfs testfile2
+makedir /file1 file3
+createvfs testfile2 10264
+createvfs testfile2 1024
+createvfs test 1024
+unmountvfs testfile2
+mountvfs testfile2
+mountvfs test
+makedir / file1
+makedir /file1/ file2
+makedir /file6/ file3
+makedir / file1
+makedir /file6/ file4
+makedir /file1/file2/ file7
+addfile /file1/file2/file7/ hello.txt  /usr/include/stab.h
+addfile /file1/file2/file7/ hello.txt  /usr/include/stab.h
+addfile /file6/file3/ hello2.txt  /usr/include/poll.h
+addfile /file6/file3/ /hello2.txt   /usr/include/poll.h
+removefile /file6/file3/file4/hello2.txt 
+removefile /file6/file3/hello2.txt 
+unmountvfs testfile2
+mountvfs testfile2
+copyfile /file1/file2/file7/hello.txt 
+copyfile abcgsdfds /file1/file2/file7/hello.txt  
+unmountvfs test
+unmountvfs testfile2

@@ -1,0 +1,24 @@
+mountvfs 
+createvfs demo8 1024
+createvfs test8 1024
+unmountvfs demo8
+mountvfs demo8
+mountvfs demo8
+mountvfs test
+mountvfs test8
+makedir /dir1
+makedir / dir1
+makedir /dir3/dir2
+makedir /dir1/dir3 dir2
+addfile /dir1/dir2 stdio.h /usr/include/stdio.h
+addfile /dir1/dir3 stdio.h /usr/include/stdio.h
+listdir / 1 /tmp/script8output1
+unmountvfs demo8
+unmountvfs demo8
+mountvfs demo8
+copyfile /dir1 /dir1/dir3/stdio.h
+copyfile /dir1/dir3/dir2  
+unmountvfs demo8
+unmountvfs test8
+movefile /stdio.h /dir1
+unmountvfs test8

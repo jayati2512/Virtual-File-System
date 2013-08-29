@@ -1,0 +1,13 @@
+createvfs family 512
+mountvfs family
+makedir / /parents
+makedir /parents son
+makedir /parents daughter
+makedir /parents/son granddaughter
+deletedir /parents/daughter
+listdir /parents 0 /tmp/listdirectory
+addfile /parents qwe.txt /usr/include/teoll.h
+addfile /parents rec.txt /usr/include/teoll.h
+searchfile rec.txt searched.txt
+removefile /parents/daughter
+unmountvfs family

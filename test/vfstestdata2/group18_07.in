@@ -1,0 +1,18 @@
+makedir / dir1
+createvfs vfs15 1000
+unmountvfs vfs
+mountvfs vfs15
+makedir / dir1
+makedir / dir2
+makedir /dir1 dir3
+deletedir /dir1
+makedir / dir1
+movedir /dir1/dir3 /
+listdir /
+listdir /dir1/dir3 
+addfile /dir1/dir3 myinput /usr/include/stab.h
+updatefile /dir1/dir3/myinput /usr/include/stab.h
+removefile /dir1/dir3/myinput
+movefile /dir1/dir3/myinput /
+addfile /dir1/dir3 myinput /usr/include/stab.h
+unmountvfs vfs15

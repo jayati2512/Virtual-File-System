@@ -1,0 +1,25 @@
+createvfs test9 1024
+createvfs test9 1024
+createvfs tes/t 1024
+mountvfs test
+mountvfs test9
+unmountvfs test1
+unmountvfs test9
+mountvfs test9
+makedir / dira
+makedir /dira/dirb/ dirc
+addfile /dira/dirb stdio.h /usr/include/stdio.h
+addfile /dira/dirb stdio.h /usr/include/stdio.h
+addfile /dira stdlib.h /usr/include/stdlib.h
+listdir / 1 /tmp/script9output1
+listdir / 2 /tmp/script9output2
+unmountvfs test9
+unmountvfs test9
+movefile /dira/stdlib.h /dira/dirb/dirc
+listdir / 1 /tmp/script9output3
+deletedir /dir/a
+deletedir /dira
+deletedir /dira/dirb/dirc
+removefile /stdio.h
+removefile /dira/dirb/stdio.h
+unmountvfs test9

@@ -1,0 +1,33 @@
+createvfs vfs_group06 1000000
+createvfs vfs_group06 40
+mountvfs vfs_group06
+unmountvfs vfs_group06
+makedir /home sub1
+addfile /home/sub1 addfile2.txt /usr/include/poll.h
+listfile /home/sub1/addfile2.txt outfile1.txt
+mountvfs vfs_group06
+makedir /home topic1
+makedir /home topic2
+makedir /home topic3
+listdir /home/
+makedir /home/topic1 topic4
+makedir /home/topic2 topic5
+listdir /home/topic1
+listdir /home/topic2
+addfile /home/topic1 addfile1.txt /usr/include/syscall.h
+listfile /home/topic1/addfile1.txt /tmp/outfile1.txt
+addfile /home/topic2 addfile2.txt /usr/include/poll.h
+listfile /home/topic1/addfile2.txt /tmp/outfile2.txt
+removefile /home/topic1/addfile2.txt
+removefile /home/topic1/addfile3.txt
+addfile /home/topic2 addfile2.txt /usr/include/poll.h
+listfile /home/topic1/addfile2.txt /tmp/outfile2.txt
+addfile /home/topic2 addfile2.txt /usr/include/poll.h
+movedir /home/topic2 /home/topic3
+listdir /home/topic2
+deletedir /home/topic2/topic3
+listdir /home/topic2/topic3
+searchfile /home/topic1/addfile1.txt /tmp/out2.txt
+searchfile /home/topic4/addfile1.txt /tmp/2.txt
+searchfile /home/topic1/addfile6.txt /tmp/out2.txt
+unmountvfs vfs_group06

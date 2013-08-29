@@ -1,0 +1,8 @@
+create vfs1 1000
+create vfs2 1040
+mountvfs vfs1
+makedir /home/dir1/dir2/ dir3
+movefile /home/dir1/ /home/dir1/
+deletedir /home/dir1/
+unmount
+unmount vfs1

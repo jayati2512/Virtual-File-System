@@ -1,0 +1,15 @@
+createvfs fruis 2222
+createvfs fruis 999
+mountvfs fruits
+makedir / lemon
+addfile /lemon citric.txt /usr/include/stdio.h
+makedir / berry
+addfile /berry sweet.txt /usr/include/stdio.h
+addfile /berry sweet.txt /usr/include/stdio.h
+movedir /sweet /citrus
+makedir /lemon orange
+movedir /lemon /orange
+movedir /lemon /berry
+removefile /lemon/sweet.txt
+removefile /berry/sweet.txt
+unmountvfs fruis

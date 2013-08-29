@@ -1,0 +1,27 @@
+createvfs unixfs 1024
+unmountvfs unixfs
+createvfs unixfs 1024
+mountvfs unixfs
+makedir /
+makedir / sys
+makedir / sbin
+makedir /sys block
+makedir /sys/ bus
+makedir /sys/ class
+makedir /sys/ dev
+listdir / 0 /tmp/output1.txt
+listdir / 1 /tmp/output2.txt 
+listdir /myfolder 0 /tmp/output1.txt
+addfile / mystdio.h /usr/include/stdio.h
+addfile / mystdlib.h /usr/include/stdlib.h
+addfile /sys/vfs.txt /usr/include/input1.txt
+listfile /sys/vfs.txt /tmp/output3.txt
+addfile
+removefile /
+mountvfs unix
+unmountvfs unixfs
+mountvfs unix
+createvfs unix 500
+createvfs demo28 1024000
+createvfs unixfs 1
+createvfs thisisveryveryveryverylongvfslabel 1024

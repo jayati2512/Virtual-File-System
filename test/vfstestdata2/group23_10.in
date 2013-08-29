@@ -1,0 +1,9 @@
+createvfs testfile2 1024
+mountvfs testfile2
+makedir /file1/bile1/cile1 dile1
+addfile /file1 ganesha.txt /usr/include/input.txt
+updatefile /file1/ganesha.txt /usr/include/new.txt
+updatefile /file1/file2/ganesha.txt /usr/include/new2.txt
+listfile /file1 /temp/out1.txt
+listfile /file1/ganesha.txt /temp/out2.txt
+listfile /file1/file2/abc.txt /temp/out2.txt

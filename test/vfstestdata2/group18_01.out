@@ -1,0 +1,20 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+unmountvfs_SUCCESS
+removefile_FAILURE VFS_NOT_MOUNTED
+mountvfs_SUCCESS
+addfile_SUCCESS
+makedir_SUCCESS
+copyfile_SUCCESS
+listdir_SUCCESS
+exportfile_SUCCESS
+removefile_FAILURE CANNOT_FIND_SPECIFIED_PATH_OR_FILE
+searchfile_SUCCESS
+deletedir_FAILURE CANNOT_FIND_SPECIFIED_PATH_OR_DIR
+addfile_SUCCESS
+listfile_FAILURE VFS_INSUFFICIENT_ARGUMENTS
+listdir_FAILURE INVALID_FLAG
+makedir_SUCCESS
+movefile_SUCCESS
+unmountvfs_FAILURE DATA_FILE_NOT_FOUND
+unmountvfs_SUCCESS

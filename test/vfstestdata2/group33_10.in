@@ -1,0 +1,13 @@
+createvfs vfs_01 1024
+createvfs vfs_03 1024
+unmountvfs vfs_02
+unmountvfs vfs_03
+makedir /usr/include/ src
+mountvfs vfs_01
+addfile /usr/include/ stdio.h /usr/include/poll.h
+addfile /usr/include/ stdio.h /usr/include/poll.h
+exportfile /usr/stdio.txt /tmp/stdio.txt
+exportfile /usr/
+searchfile stdio.h /tmp/lib/search.txt
+unmount
+unmount vfs_01

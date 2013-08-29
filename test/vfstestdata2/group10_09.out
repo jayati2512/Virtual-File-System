@@ -1,0 +1,9 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+addfile_FAILURE
+addfile_FAILURE
+movefile_FAILURE
+addfile_FAILURE
+copyfile_FAILURE
+unmountvfs_SUCCESS

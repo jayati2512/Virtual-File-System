@@ -1,0 +1,20 @@
+createvfs file 1024
+mountvfs file
+makedir tv
+makedir /tv
+makedir /mobile
+makedir /mobile nokia
+makedir /mobile lg
+makedir /tv sony
+makedir /tv samsung
+addfile /mobile/nokia gift.c
+addfile /tv/sony price.txt
+listfile /tv/sony/price.txt /tmp
+updatefile /mobile/nokia/gift.c 
+copyfile /tv/samsung /mobile/lg
+deletedir sony
+unmountvfs file
+exportfile /mobile/nokia/gift.c /tmp/hello.c
+removefile /tv/sony/price.txt
+mountvfs file
+searchfile gi /tmp

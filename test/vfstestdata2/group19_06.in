@@ -1,0 +1,22 @@
+createvfs 89
+createvfs /vfs1 1000
+createvfs vfs1 1000
+addfile / math.h /user/include/math.h
+unmountvfs vfs1 
+mountvfs vfs1
+mountvfs vfs1
+addfile / math.h /user/include/math.h
+addfile / mat.h /user/include/math.jpeg
+makedir /file1.txt dir1
+deletedir dir1
+makedir / dir1
+addfile /dir1 math.h /user/include/math.h
+makedir /dir1 dir1
+deletedir /dir1
+deletedir /dir1/dir1
+listdir /dir3 1 /temp/list.txt
+listdir /dir1 4 /temp/list.txt
+listdir /dir1 1 /temp/list.txt
+unmountvfs 
+unmountvfs vfs2
+unmountvfs vfs1

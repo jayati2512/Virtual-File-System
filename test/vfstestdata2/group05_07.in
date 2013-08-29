@@ -1,0 +1,15 @@
+mountvfs vfs1
+createvfs vfs1
+mountvfs vfs1
+unmountvfs vfs1
+deletedir /another/abc/ss
+createvfs vfs1 1024
+mountvfs vfs1
+deletedir /another/abc
+makedir /another /abc
+makedir /as /aa
+movedir /another/abc /as/aaa
+deletedir /another/abc/as
+updatefile /another/abc/one.txt 
+unmontvfs vfs2
+unmountvfs vfs1

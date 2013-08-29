@@ -1,0 +1,23 @@
+createvfs 1024
+mountvfs bookstore
+unmountvfs bookstore
+mountvfs bookstore
+makedir /books
+makedir /books novels
+makedir /books educational
+makedir /books dailies
+makedir /books/novelsthrillers
+makedir /books/novels scifi
+makedir /books/educational math
+makedir /books/educational science
+deletedir /books/dailies
+listdir /books 0 /tmp/listdir.txt
+addfile /books list.txt /usr/include/teoll.h
+searchfile list.txt output.txt
+addfile /books/dailies newspapers.txt /usr/include/teoll.h
+removefile /books/novels
+unmountvfs bookstore
+makedir /books magazines
+makefile /books/magazines abc.txt
+listfile abc.txt /tmp/out.txt
+movefile /books /books/novels

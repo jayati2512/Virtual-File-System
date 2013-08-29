@@ -1,0 +1,16 @@
+createvfs firstv/fs 1024
+createvfs fstvfs 1024
+mountvfs 
+mountvfs fstvfs
+makedir / ora#nge
+makedir / orange/fruit
+makedir / apple
+addfile /orange orng.txt /usr/include/stdio.h
+movedir /orange/orng.txt /apple
+movedir /orange/fruit /orange
+movedir /orange/fruit /apple
+listdir /apple 3 /home/neha/logfl.txt
+updatefile /orange/orng.txt /usr/include/stdi.h
+updatefile /apple/orange/orn.txt /usr/include/stdio.h
+copyfile /apple/fruit /apple/apl.txt
+unmountvfs fstvfs

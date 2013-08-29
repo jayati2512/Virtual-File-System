@@ -1,0 +1,10 @@
+createvfs demo 1024
+mountvfs demo 
+makedir /home/ medir
+makedir /home/medir youdir
+makedir /home/medir/youdir itdir
+listdir /home/medir 2 listoutput
+listdir /home/medir/youdir 1 
+listdir /home/medir/youdir/dir 0 listoutput
+listdir /home/medir 1 listoutput
+unmountvfs demo

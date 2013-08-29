@@ -1,0 +1,14 @@
+createvfs globe 0
+mountvfs globe
+makedir /Solarsystem/Earth/Asia India
+makedir /Solarsystem/Earth/West US
+addfile /Solarsystem/Earth/Asia/India applestores.txt geography.txt
+copyfile /Solarsystem/Earth/Asia/India/applestores.txt /Solarsystem/Earth/West/US
+updatefile /Solarsystem/Earth/West/US/applestores.txt usstores.txt
+addfile /Solarsystem/Earth/Asia/India junkfile /usr/bin/ls
+exportfile /Solarsystem/Earth/Asia/India/junkfile.txt /tmp/newls
+removefile /Solarsystem/Earth/Asia/India/junkfile.txt
+searchfile junkfile.txt /tmp/sfile05.1
+searchfile usstores.txt /tmp/sfile05.2
+listfile /Solarsystem/Earth/West/US/applestores.txt /tmp/lsfile05.1
+unmountvfs globe

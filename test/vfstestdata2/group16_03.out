@@ -1,0 +1,28 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+listdir_SUCCESS
+movedir_SUCCESS 
+listdir_SUCCESS
+deletedir_FAILURE DIRECTORY_IS_NOT_EMPTY
+deletedir_SUCCESS 
+listdir_SUCCESS
+addfile_SUCCESS 
+addfile_SUCCESS 
+listfile_SUCCESS 
+update_SUCCESS 
+listfile_SUCCESS 
+copyfile_FAILURE CANNOT_FIND_DESTINATIONFILE
+removefile_SUCCESS 
+movefile_SUCCESS 
+listfile_SUCCESS 
+searchfile_SUCCESS 1
+unmountvfs_SUCCESS

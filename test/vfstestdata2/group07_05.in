@@ -1,0 +1,10 @@
+createvfs vfs 1024
+mountvfs vfs
+addfile / input.txt /usr/include/stdio.h
+listfile /input.txt /tmp/output.jpeg
+listfile /input1.txt /tmp/output.jpeg
+updatefile /input.txt
+addfile / input1.txt /usr/include/stdio.h
+updatefile /input1.txt /usr/include/input.txt
+updatefile /input2.txt /usr/include/input.txt
+updatefile /input1.txt /usr/include/input3.txt

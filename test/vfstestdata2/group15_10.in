@@ -1,0 +1,20 @@
+createvfs asdf 1024
+createvfs qwer 1024 
+mountvfs qwer
+mountvfs asdf
+addfile / test.txt /usr/include/poll.h
+makedir / home
+movefile /test.txt /home/
+movefile /test.txt
+listdir 1 /tmp/output.txt
+listdir /home/ 1 /tmp/output.txt
+unmountvfs qwer
+mountvfs asdf
+makedir / home
+addfile test.txt /usr/include/stdio.h
+addfile /home/ test.txt /usr/include/stdio.h
+addfile /home/ test.txt /usr/include/memory.h
+updatefile /home/testify.txt /usr/include/stdio.h
+updatefile /home/test.txt /usr/include/stdio.h
+unmountvfs asdf
+updatefile /home/test.txt /usr/include/stab.h

@@ -1,0 +1,12 @@
+createvfs vfs 1024
+mountvfs vfs
+makedir / dir
+removefile dir
+update /usr/include/stdio.h
+makedir / /dir1
+makedir / dir1
+movedir dir input.txt
+movedir input.txt dir1
+movedir dir dir2
+movedir dir2 dir
+movedir dir dir1

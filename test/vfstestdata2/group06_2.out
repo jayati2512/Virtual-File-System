@@ -1,0 +1,9 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+addfile_FAILURE FILE_ALREADY_EXISTS
+updatefile_FAILURE INTERNAL_FILE_NOT_FOUND
+unmountvfs_SUCCESS

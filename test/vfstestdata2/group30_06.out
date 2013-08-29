@@ -1,0 +1,8 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_FAILED DIRECTORY_ALREADY_EXIST
+makedir_FAILED VFS_INSUFFICIENT_ARGUMENT
+unmountvfs_SUCCESS

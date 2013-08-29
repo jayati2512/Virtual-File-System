@@ -1,0 +1,19 @@
+createvfs /demo 1
+createvfs d@# 1024
+mountvfs d@#
+addfile /abc.txt /usr/include/xyz.txt
+addfile /def.txt /user/include/xyz.txt
+listfile /abc.txt /user/include/aaa.txt
+updatefile /conio.h /usr/include/stdlib.h
+addfile / abc.txt /user/abc.txt.jpg
+copyfile /abc.txt /def.txt
+copyfile /abc.txt /xyz.jpg
+addfile / abc.jpg /user/include/abc.txt.jpg
+addfile / abc.txt.jpg /user/abc.txt.jpg
+copyfile /xyz/abc.txt /
+unmountvfs d@#
+movefile
+createvfs demo2 1 
+mountvfs demo2
+createvfs demo3 1 
+mountvfs demo2 

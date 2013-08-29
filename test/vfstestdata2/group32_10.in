@@ -1,0 +1,14 @@
+createvfs vfs 1024
+mountvfs vfs
+unmountvfs vfs 
+mountvfs vfs
+mountvfs vfs
+unmountvfs vfs 
+mountvfs vfs
+mountvfs vfs
+unmountvfs vfs 
+mountvfs vfs
+mountvfs vfs
+unmountvfs vfs 
+mountvfs vfs
+makedir / f

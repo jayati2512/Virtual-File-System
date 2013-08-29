@@ -1,0 +1,11 @@
+createvfs SUCCESS
+mountvfs SUCCESS
+unmountvfs SUCCESS
+createvfs SUCCESS
+mountvfs FAILURE-VFS MOUNTED ALREADY
+makedir SUCCESS
+deletedir FAILURE-PATH NOT FOUND
+movedir SUCCESS
+listdir SUCCESS
+searchfile SUCCESS
+unmountvfs SUCCESS

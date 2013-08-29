@@ -1,0 +1,17 @@
+createvfs demo 1024
+mountvfs demo
+makedir /parent
+makedir /employee
+makedir /parent child
+makedir /parent child2
+makedir /parent/child2 sibling1
+makedir /parent/child2 perimeter
+makedir /employee technician
+makedir /employee/technician fresh
+makedir /employee engineer
+makedir /parent/child circumfrence
+addfile /parent read.txt /usr/include/teoll.h
+listdir /home 1 /tmp
+updatefile /parent/abc.txt update.txt 
+deletedir /employee/engineer
+movefile /parent/read.txt /shapes/rectangle/sibling1

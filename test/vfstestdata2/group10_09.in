@@ -1,0 +1,9 @@
+createvfs demo 1024
+mountvfs demo
+makedir / mydir
+addfile / myfile /home/listoutput
+addfile / yourfile /home/temp
+movefile /myfile /mydir
+addfile / file /home/temp
+copyfile /yourfile /file
+unmountvfs demo

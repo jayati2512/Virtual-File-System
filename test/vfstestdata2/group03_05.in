@@ -1,0 +1,21 @@
+createvfs myv/fs 10
+mountvfs myv/fs
+makedir / d1
+deletedir /d1
+createvfs myvfs 10
+mountvfs myvfs
+makedir / d1
+makedir /d1 d2
+addfile /d1/d2 myfile.txt /usr/include/stab.h
+addfile /d1/d2 myfile.txt /usr/include/stab.h
+movefile /d1/d2/myfile.txt /d5/d6/d8
+movefile /d1/d2/myfile.txt /
+makedir /d5/d6/d7/d8 d9
+addfile /d5/d6/d7 mydata.txt /usr/include/stab.h
+addfile / mydoc.txt /usr/include/stab.h
+searchfile myd /tmp/output_search_file.txt
+searchfile my /tmp/output_search_file.txt
+listdir / 98 /tmp/output_list_dir.txt
+listdir / 1 /tmp/output_list_dir.txt
+unmountvfs
+unmountvfs myvfs

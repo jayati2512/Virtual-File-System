@@ -1,0 +1,16 @@
+create demo10 20
+createvfs demo10 50
+mountvfs demo10
+makedir /home/dir1/ dir2
+addfile /home/dir1/dir2/ file1.txt /usr/include/zlibdefs.h
+listdir /home/dir1/ 1 /tmp/listdir1
+makedir / /
+movedir /home/dir1/ /
+makedir /home/ dir1
+addfile /home/ file2.txt /usr/include/zlibdefs.h
+exportfile /home/dir1/dir2/file1.txt /tmp/exportfile1
+movedir /home/dir1/dir2/ /home/file2.txt
+updatefile /home/file2.txt /usr/include/wait.h
+listfile /home/file2.txt /tmp/listfile1
+unmountvfs demo10
+unmountvfs demo10

@@ -1,0 +1,8 @@
+mountvfs vfs/26
+create vfs1 0
+create vfs1 12
+unmount vfs1
+mount vfs1
+deletdir /home/dir1/
+mount vfs1
+unmount vfs1

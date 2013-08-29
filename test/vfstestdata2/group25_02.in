@@ -1,0 +1,42 @@
+createvfs VFS25_02 0
+createvfs VFS25_02_v1 512
+createvfs VFS25_02a
+createvfs VFS/25_02a
+createvfs abcdefghijklmnopqrstuvwxyz_VFS25
+makedir / x/y
+deletedir /x/y/z
+movedir /x/y/z/ /x/xx/
+listdir /x/ 1 /tmp/listdir_output.txt
+addfile /x/xx/ add6.txt /usr/include/values.h
+listfile /x/xx/add1.txt /tmp/listfile_output.txt
+updatefile /x/xx/Add3.doc /usr/include/wait.h
+removefile /x/xx/add1.txt
+movefile /x/xx/add1.txt /x/xx/yy/
+copyfile /x/xx/yy/add1.txt /x/xx/yy/zz/
+exportfile /x/xx/add1.txt /tmp/
+searchfile ab /tmp/searchfile_output.txt
+mountvfs dummyVFS
+mountvfs VFS25_02
+mountvfs VFS25_02
+mountvfs
+unmountvfs VFS25_02
+unmountvfs
+unmountvfs dummyVFS
+unmountvfs VFS25_02_v1
+makedir /x/y/ z
+makedir /x/xx/yy/zz/ ww
+makedir /x/xx/yy/zz/ ww
+makedir /x/xx/
+makedir /x/y/ / 
+movedir /x/y/z/ /x/xx/
+movedir /x/xx/yy/zz/ww 
+movedir /x/y/dummy /x/ 	
+movedir /x/y/z/ /x/xx/yy/		
+movedir /x/yy/z/ /x/xx/yy/dummy/ 
+movedir /x/y/z /x/xx/		
+movedir /x/xx/ x/xx/z/ 	
+deletedir /x/y/ 	
+deletedir  		
+deletedir /x/y/dummydir 	
+deletedir /x/xx 			
+deletedir /x//y/z 	

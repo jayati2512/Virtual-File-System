@@ -1,0 +1,13 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_UNABLE_TO_CREATE_NEWFILE
+listdir_SUCCESS
+movefile_CANNOT_FIND_SPECIFIED_SOURCEFILE
+listdir_SUCCESS
+deletedir_DIRECTORY_IS_NOT_EMPTY
+unmountvfs_SUCCESS

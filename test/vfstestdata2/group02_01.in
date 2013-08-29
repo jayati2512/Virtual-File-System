@@ -1,0 +1,24 @@
+createvfs city 1026
+createvfs city 100
+makedir /city
+makedir /city bangalore
+makedir /city kolkata
+makedir /city mumbai
+makedir /city delhi
+makedir /work doctor
+makedir /work teacher
+makedir /work engineer
+unmountvfs city
+makedir /name
+mountvfs city
+addfile b1
+addfile /city/bangalore b1.txt /usr/include/wait.h
+addfile /city/kolkata //.txt /usr/include/poll.h
+addfile /city/kolkata k1.txt /usr/include/poll.h
+unmountvfs city
+addfile /city/mumbai/ m1.txt /usr/include/ustat.h
+mountvfs city
+addfile /city/mumbai/ m1.txt /usr/include/ustat.h
+listfile /city/mumbai/m1.txt /tmp/user.txt
+listfile /city/bangalore/b1.txt/
+unmountvfs city

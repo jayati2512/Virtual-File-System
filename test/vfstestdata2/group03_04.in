@@ -1,0 +1,8 @@
+createvfs demoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo 10
+mountvfs demo
+makedir / d1
+unmountvfs demo
+createvfs demo 1
+mountvfs demo
+makedir / d1
+unmountvfs demo

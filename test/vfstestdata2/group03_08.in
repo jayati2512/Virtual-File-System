@@ -1,0 +1,27 @@
+createvfs my_vfs 512
+mountvfs my_vfs
+makedir / dir1
+makedir / dir2
+makedir /dir1 dir3
+makedir /dir1 dir4
+makedir /dir2 dir5
+makedir /dir2 dir6
+makedir /dir2 dir7
+addfile /dir2 abc /usr/include/stab.h
+addfile /dir2 abcd /usr/include/stab.h
+addfile /dir1 asd /usr/include/termio.h
+makedir /dir2/dir7 dir3 	      
+movedir /dir2/dir7/dir8 /dir8
+addfile /dir2/dir3 /usr/include/stab.h   
+addfile /dir1/uvx /usr/include/stab.h
+updatefile /dir2/abcd /usr/include/output2.txt
+makedir / dir9
+listfile /dir1/dir3/wxyz output.txt
+listdir / 2 output4.txt 		
+listdir /dir2 1 output4.txt
+addfile /dir2/dir5 err /usr/include/stab.h
+addfile /dir2/dir6 sabcd /usr/include/stab.h
+addfile /dir1 ghij /usr/include/stab.h
+addfile /dir2/dir7/dir8 sys /usr/include/stab.h
+unmountvfs my_vfs
+unmountvfs my_vfs

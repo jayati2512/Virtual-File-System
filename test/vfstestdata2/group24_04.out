@@ -1,0 +1,23 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_FAILURE "VFS_INSUFFICIENT_ARGUMENTS"
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+deletedir_SUCCESS
+listdir_SUCCESS
+addfile_SUCCESS
+searchfile_SUCCESS
+addfile_SUCCESS
+removefile_FAILURE "CANNOT_FIND_SPECIFIED_FILE"
+unmountvfs_SUCCESS
+makedir_FAILURE "VFS_NOT_MOUNTED"
+makefile_FAILURE "VFS_NOT_MOUNTED"
+listfile_FAILURE "VFS_NOT_MOUNTED"
+movefile_FAILURE "VFS_NOT_MOUNTED"

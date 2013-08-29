@@ -1,0 +1,27 @@
+createvfs asdf 1024 
+mountvfs asdf 
+makedir / home
+makedir /home/ sub
+makedir /home/ b/a 	
+makedir / gome
+makedir /gome/ pub
+addfile /home/ test.txt /usr/include/stab.h
+addfile /gome/ pest.txt /usr/include/stab.h
+listfile /home/test.txt /tmp/output1.txt
+movedir /home/ /home/sub/
+movedir /gome/ /home/ 
+listdir / 2 /tmp/output2.txt
+listdir / 0 /tmp/output3.txt
+deletedir /gome/
+unmountvfs asdf
+createvfs adfg 1024
+mountvfs adfg
+makedir / home
+addfile /home/ test.txt /usr/include/stdio.h
+addfile /home/ test.txt /usr/include/stab.h
+makedir / gome
+copyfile /home/test.txt /gome/pest.txt
+updatefile /gome/pest.txt /usr/include/stdio.h
+updatefile /gome/pest.txt /usr/include/poll.h
+exportfile /home/ /tmp/eout.txt 
+exportfile /home/test.txt /tmp/eout.txt 

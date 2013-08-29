@@ -1,0 +1,44 @@
+createvfs vfs1 200
+mountvfs vfs1
+makedir /a/b/c/d/ e
+unmount vfs1
+mountvfs vfs1
+makedir /a/b/c/d/ e 
+makedir /k/ l
+unmountvfs vfs1
+mountvfs vfs1
+addfile /a/b/ ab/c.txt /usr/include/wait.h  
+addfile /a/b/ abc.txt /usr/include/wait.h
+makedir /f/g/ h
+addfile /a/b/ abcc.txt /usr/include/wait.h
+makedir /i/ j
+addfile /a/b/c/ Abc.txt /usr/include/wait.h
+addfile /a/b/c/ Abc.txt /usr/include/wait.h 
+addfile /a/b/c/ mno.txt /usr/include/wait.h
+addfile /a/b/c/ abc.txt /usr/include/wait.h
+copyfile /a/b/c/abc.txt /f/g/h/xyz.txt
+copyfile /a/b/c /f/g/h/pqr.txt 
+copyfile /a/b/c/abc.txt /f/g/h/pqr.txt
+movedir / /a/b/  		
+movedir /k/l/ /i/j/
+addfile /i/j/k/l/ M.txt /usr/include/wait.h
+addfile /i/j/k/l/ L.txt /usr/include/wait.h
+addfile /i/j/k/ n.txt /usr/include/wait.h
+searchfile abc /tmp/out.txt 
+movefile /i/j/k/n.txt /ps.txt
+movefile /i/j/k/n.txt /ps.txt 
+exportfile /i/j/k/n.txt /tmp/
+removefile /i/j/k/n.txt 
+copyfile /ps.txt /i/j/k/n.txt
+removefile /i/j/k/n.txt
+copyfile /ps.txt /i/j/k/n.txt
+updatefile /i/j/k/n.txt /usr/include/wait.h
+listfile /i/j/k/n.txt /tmp/out_file1.txt
+listdir / 1 /tmp/out_file2.txt
+listdir / 0 /tmp/out_file3.txt
+listdir / 9 /tmp/out_file4.txt
+listdir /a/b/c/d/e/f/ 1 /tmp/out_listfile10.txt
+deletedir / 	
+deletedir /i/ 	
+deletedir /a/b/c/d/e/
+unmount vfs1

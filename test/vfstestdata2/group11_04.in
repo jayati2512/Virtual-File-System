@@ -1,0 +1,17 @@
+createvfs myvfs5 1024
+mountvfs myvfs5
+makedir /usr/ hj.l
+makedir /usr/ hello
+makedir /usr/hello hi
+movedir /usr/hello /usr/hello/hi
+addfile /usr/hello a.txt /usr/include/poll.h
+addfile /usr/hello aa.txt /usr/include/poll.h
+addfile /usr/hello b.txt /usr/include/poll.h
+updatefile /usr/ /usr/include/poll.h
+movefile /usr/hello/a.txt /usr/hello/aa.txt
+listfile /usr/hi /tmp/out.txt
+makedir /usr/hello/hi hell
+movedir /usr/hello/hi/hell /usr/hello
+searchfile b /tmp/a.png
+unmountvfs myvfs
+unmountvfs myvfs5

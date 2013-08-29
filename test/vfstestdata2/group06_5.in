@@ -1,0 +1,20 @@
+createvfs vfs 50
+mountvfs vfs
+mountvfs vfs
+unmountvfs vfs
+addfile /home/subdir2/ newfile6.txt /usr/include/zlibdefs.h
+listfile /home/subdir2/newfile6.txt /tmp/listfiles.txt
+mountvfs vfs
+addfile /home/subdir2/ newfile7.txt /usr/include/zlibdefs.h
+addfile /home/subdir2/ newfile8.txt /usr/include/syscall.h
+searchfile newfile11.txt /tmp/searchfile1.txt
+searchfile newfile8.txt /tmp/searchfile1.txt
+listfile /home/subdir2/newfile7.txt /tmp/listfiles.txt
+listfile /home/subdir2/newfile8.txt /tmp/listfiles.txt
+movefile /home /home/subdir2/newfile7.txt
+listfile /home/subdir2/newfile7.txt /tmp/listfiles.txt
+unmountvfs vfs
+searchfile newfile7.txt /tmp/searchfiles.txt
+searchfile newfile11.txt /tmp/searchfiles.txt
+searchfile newfile8.txt /tmp/searchfiles.txt
+unmountvfs vfs

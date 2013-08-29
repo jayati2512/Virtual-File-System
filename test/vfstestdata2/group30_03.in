@@ -1,0 +1,12 @@
+createvfs demo 10
+mountvfs demo
+movedir / /institute
+makedir /institute/school kg_school
+makedir /institute/school kg_school
+deletedir /institute/school/highschool
+makedir /institute/college/iiit/imtech/comp.sci/python marks
+makedir /institute/college/iiit/imtech embedded_systems
+deletedir /institute/college/iiit/imtech/embedded_systems
+movedir /institute/college/iiit/imtech/embedded_systems /institute/college/iiit/imtech/comp.sci
+listdir /institute 1 /tmp/listout3
+unmountvfs demo

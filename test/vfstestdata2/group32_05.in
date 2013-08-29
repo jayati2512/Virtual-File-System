@@ -1,0 +1,15 @@
+makedir /home/usr/ newdir1
+mountvfs vfs31
+createvfs 32 1024
+unmountvfs 32
+mountvfs 32
+makedir /home/
+makedir /home/demo1/ newdir1
+addfile /home abc.txt /usr/include/wait.h
+makedir /home/usr/ newdir1
+deletedir /home/usr/newdir1
+unmountvfs 32
+searchfile a.txt /temp
+removefile /home/xyz.txt
+mountvfs 32
+searchfile awe.txt /data

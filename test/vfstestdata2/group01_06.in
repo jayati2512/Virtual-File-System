@@ -1,0 +1,9 @@
+createvfs test4 100
+mountvfs test4
+makedir /a/b/c/d/v/ abc
+addfile /a/b/ exam.txt /usr/include/wait.h
+removefile /a/b/exam.txt
+removefile /a/b/exam.txt
+listdir /a/ 0 /tmp/listdiroutput4.txt
+unmountvfs test44
+unmountvfs test4

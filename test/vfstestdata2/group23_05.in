@@ -1,0 +1,20 @@
+createvfs vfs1 1024
+mountvfs vfs1
+makedir / adir1
+makedir /adir1 lkdir1
+makedir / vdir2
+makedir /adir1/lkdir1 mnpdir1
+addfile /adir1/lkdir1 xyzfile1.txt input1.txt
+deletedir /vdir2
+makedir /adir1 nxdir1
+addfile /adir1/lkdir1 xyzfile1.txt
+addfile /adir1/lkdir1 xyzfile1.txt input1.txt
+listfile /vdir2/abcfile2.txt listresult.txt
+addfile /adir1/nxdir1 xyzfile1.txt input2.txt
+searchfile xyzfile1.txt searchresult.txt
+addfile /adir1 szfi/le1.txt
+searchfile searchresult.txt
+listfile listresult.txt
+unmountvfs vfs1
+listfile /adir1/lkdir1/xyzfile1.txt listresult.txt
+searchfile xyzfile1.txt searchresult.txt

@@ -1,0 +1,8 @@
+createvfs vfs1 20
+mountvfs vfs1
+makedir /home/dir1/ dir2
+makedir /home/dir3/dir4/ dir5
+listdir /home/ 1 /tmp/listdir1.txt
+deletedir /home/dir1/
+listdir /root/ 1 /tmp/listdir2.txt
+unmountvfs vfs1

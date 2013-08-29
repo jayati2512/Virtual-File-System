@@ -1,0 +1,21 @@
+createvfs vfs 2048
+createvfs vf/s 1024
+createvfs vfs 1024
+mountvfs vfs
+makedir /employee
+makedir /customer
+makedir /employee officer
+makedir /employee teller
+makedir /employee officer
+unmountvfs vfs
+makedir /customer account
+mountvfs vfs
+makedir /customer account
+makedir /customer name
+deletedir /employee/offic
+addfile /employee/officer xyz.txt /user/include
+updatefile /employee/officer/xyz.txt /user/include/file.abc
+updatefile /employee/officer/xyz.txt /user/include/file.txt
+copyfile /customer/account /employee/officer/xyz.txt
+searchfile xyz.txt 
+unmountvfs vfs

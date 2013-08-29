@@ -1,0 +1,9 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+removefile_SUCCESS
+removefile_FAILURE CANNOT_FIND_SPECIFIED_FILE
+listdir_SUCCESS
+unmountvfs_FAILURE VFS_NOT_MOUNTED
+unmountvfs_SUCCESS

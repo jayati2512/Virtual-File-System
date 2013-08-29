@@ -1,0 +1,9 @@
+createvfs demo 3
+unmountvfs demo
+mountvfs demo
+makedir / home
+addfile /home fname /usr/include/wait.h
+addfile /home fname1 /usr/include/ustat.h
+addfile /home fname2 /usr/include/syslog.h
+addfile /home fname3 /usr/include/syscall.h
+unmountvfs demo

@@ -1,0 +1,20 @@
+createvfs vfs5 1000
+makedir /dir1 dir2
+mountvfs vfs5
+makedir /dir1/dir2/dir3/
+makedir /dir1/dir2/dir3 dir4
+addfile /dir1 wait.txt /usr/include/wait.h
+addfile /dir1 wait.h /usr/include/wait.h
+listfile /dir1/wait.txt /tmp/wait.txt
+listfile /dir1/wait.h /usr/include/wait.h
+addfile /dir1/dir2/rgrep.exe /usr/rgrep
+exportfile /dir1/dir2/rgrep.exe /tmp/rgrep
+deletedir /dir1/dir2/dir3/dir4
+deletedir /dir1
+updatefile /dir1/hello.txt /usr/include/driver.h
+updatefile /dir1/wait.txt /usr/include/driver.h
+makedir /dir1/dir2/dir3/dir4/dir5 dir6
+movedir /dir1/dir2/dir3 /dir1/dir2/dir3/dir4/dir5
+copyfile /dir1/dir2/wait.txt /dir1/dir2/dir3/wait.txt
+copyfile /dir1/wait.txt /dir1/dir2/dir3/dir4/wait.txt
+unmountvfs vfs5

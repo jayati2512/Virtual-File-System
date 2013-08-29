@@ -1,0 +1,11 @@
+createvfs / 10
+createvfs demo 40
+mountvfs demo
+makedir /institute/college/iiit/imtech/comp.sci/python marks
+movedir /institute/college/iiit/imtech /institute/college/iiit/imtech/comp.sci/python
+makedir /institute/college/iiit/imtech embedded_systems
+movedir /institute/college/iiit/imtech/embedded_systems /institute/college/iiit/imtech/comp.sci
+movedir /institute/school /institute/college/iiit/imtech/embedded_systems
+makedir /institute/college/iiit/imtech/comp.sci/c++ inheritance
+listdir /institute 1 /tmp/listout2
+unmountvfs demo

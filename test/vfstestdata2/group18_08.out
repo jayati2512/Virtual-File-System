@@ -1,0 +1,17 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS 
+addfile_SUCCESS
+listfile_FAILURE SOURCE_FILE_PATH_NOT_FOUND
+makedir_SUCCESS
+movedir_SUCCESS
+listfile_FAILURE NOT_A_TEXT_FILE
+copyfile_FAILURE CANNOT_COPY_DIR_TO_FILE
+listdir_SUCCESS
+listdir_SUCCESS
+addfile_FAILURE VFS_INSUFFICIENT_ARGUMENTS
+exportfile_SUCCESS
+searchfile_SUCCESS
+unmount_SUCCESS
+updatefile_FAILURE VFS_NOT_MOUNTED

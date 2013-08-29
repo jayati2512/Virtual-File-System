@@ -1,0 +1,18 @@
+createvfs test 1024
+unmountvfs test
+addfile / stdio.h /usr/include/stdio.h
+listdir / 1 script5output1
+unmountvfs test
+mountvfs test
+makedir / dir
+addfile / stdio.h /usr/include/stdio.h
+listdir / 1 /tmp/script5output2
+movefile /stdio.h /dir
+listdir / 1 /tmp/script5output3
+removefile /dir/stdio.h
+listdir / 1 /tmp/script5output4
+searchfile stdio.h /tmp/seeee.txt
+deletedir /dir/stdio.h
+deletedir /
+deletedir /dir
+unmountvfs test

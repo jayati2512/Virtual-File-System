@@ -1,0 +1,19 @@
+createvfs DEMO 10240000
+createvfs DEMOINTERACTIONINPUTSCRIPTFORVFSTESTING 1024
+createvfs DEMOVFS 
+createvfs DEMO/INPUT 1024
+createvfs DEMO 1024
+mountvfs
+mountvfs DEMO
+mountvfs DEMO
+makedir /home/
+makedir /home/ a
+makedir /home/ a
+addfile /home/a addout.dat
+addfile /home/a addout.dat /usr/include/syslog.h
+addfile /home/a addout1.txt /usr/include/ustat.h
+listfile /home/a/addout.dat /tmp/listout.dat
+listfile /home/a/addout1.txt /tmp/listout1.txt
+unmountvfs DEMOINPUT
+unmountvfs
+unmountvfs DEMO

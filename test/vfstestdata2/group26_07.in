@@ -1,0 +1,18 @@
+createvfs vfs1 10
+mountvfs vfs1
+makedir /home/ dir1
+makedir /home/ dir2
+addfile /home/dir1/ apple /usr/include/alloca.h
+addfile /home/ abc1 sample3
+addfile /home/ abc2 /usr/include/poll.h
+addfile /home/ abc3 /usr/include/wait.h
+makedir /home/dir3/ dir4
+removefile 
+addfile /home/ abc4 /usr/include/ustat.h
+addfile /home/ abc5 /usr/include/wait.h
+addfile /home/ abc6 /usr/include/poll.h
+addfile /home/ abc7 sample3
+addfile /home/ abc8 sample3
+copyfile /home/f5 root/dir1/
+listfile /home/f4 /tmp/file
+unmountvfs vfs1

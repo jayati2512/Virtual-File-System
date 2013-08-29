@@ -1,0 +1,11 @@
+createvfs_FAILURE "INVALID_CHARACTER_IN_NAME"
+createvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_FAILURE VFS_INSUFFICIENT_ARGUMENTS
+addfile_SUCCESS
+deletedir_FAILURE DIRECTORY_IS_NOT_EMPTY
+removefile_SUCCESS
+unmountvfs_SUCCESS

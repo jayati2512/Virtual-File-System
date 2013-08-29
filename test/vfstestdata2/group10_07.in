@@ -1,0 +1,7 @@
+createvfs demo 10
+mountvfs demo
+makedir / medir
+addfile /medir/ myfile /usr/include/lastlog.h
+listfile /medir/myfile /tmp/listoutput.txt
+removefile /medir/myfile
+unmountvfs demo

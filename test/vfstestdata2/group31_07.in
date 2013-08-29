@@ -1,0 +1,21 @@
+createvfs demo7 1024
+mountvfs demo7
+addfile / stdio.h /usr/include/stdio.h
+addfile / stdlib.h /usr/include/stdlib.h
+addfile / strings.h /usr/include/strings.h
+listfile / /tmp/script7output1
+exportfile /stdlib.h /tmp/script7output2
+makedir / dir1
+movefile /stdio.h /dir1
+unmountvfs demo7
+removefile /dir1/stdio.h
+mountvfs 
+mountvfs demo7
+makedir / dira
+makedir / dira/dirc
+listdir / 1 /tmp/script7output3
+deletedir /
+deletedir /dira
+listdir / 1 /tmp/script7output4
+unmountvfs demo7
+unmountvfs demo7

@@ -1,0 +1,15 @@
+createvfs_FAILURE:VFS_INSUFFICIENT_ARGUMENTS
+createvfs_SUCCESS
+mountvfs_SUCCESS
+addfile_FAILURE UNABLE_TO_CREATE_NEWFILE
+addfile_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+listfile_SUCCESS
+removefile_FAILURE:CANNOT_FIND_SPECIFIED_FILE
+movefile_SUCCESS
+copyfile_SUCCESS
+movefile_SUCCESS
+deletedir_FAILURE: DIRECTORY_IS_NOT_EMPTY
+exportfile_SUCCESS
+unmountvfs_SUCCESS

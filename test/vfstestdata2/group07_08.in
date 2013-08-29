@@ -1,0 +1,10 @@
+createvfs vfs 1000
+mount
+makedir / dir1
+mount vfs
+makedir 
+makedir /dir
+makedir / /dir
+makedir / dir
+makedir / dir
+makedir / dir1

@@ -1,0 +1,19 @@
+createvfs vfs/ 
+createvfs vfs 10
+makedir /home/a1/a2/a3/a/a6/a8/a5 a7
+unmount vfs1
+createvfs vfs2 10024
+createvfs vfs2 1000
+mountvfs vfs2
+makedir /home/a/b/c/d e
+deletedir /home/a
+makedir /another/w/x/y z
+movedir /home /home/a
+movedir /abc/d /home/a/b/c
+movedir /home/a/b/c /dell/cp
+movedir /home
+movedir /home/a/b/c /another/w
+movedir /another/w/x /home/a/b
+movedir /home/a/b/w /home/a/b
+unmount vfs2
+movedir /home/a/b /another/w

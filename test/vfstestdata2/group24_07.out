@@ -1,0 +1,13 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+deletedir_SUCCESS
+listdir_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+searchfile_SUCCESS
+removefile_FAILURE "CANNOT_FIND_SPECIFIED_FILE"
+unmountvfs_SUCCESS

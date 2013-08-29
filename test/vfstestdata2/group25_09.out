@@ -1,0 +1,11 @@
+createvfs SUCCESS
+mountvfs SUCCESS
+addfile FAILURE SOURCE_PATH_NOT_FOUND
+makedir SUCCESS
+addfile SUCCESS
+removefile SUCCESS
+searchfile SUCCESS
+unmountvfs SUCCESS
+unmountvfs FAILURE VFS_NOT_MOUNTED
+mountvfs SUCCESS
+listdir FAILURE_INVALID_FLAG

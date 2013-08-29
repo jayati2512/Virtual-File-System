@@ -1,0 +1,19 @@
+createvfs cities 300
+mountvfs cities
+makedir /cities bangalore
+makedir /cities kolkata
+makedir /cities mumbai
+makedir /cities pune
+makedir /cities goa
+addfile /cities/kolkata b.txt /usr/include/syscall.h
+addfile /cities/mumbai c.txt /usr/include/wait.h
+addfile /cities/pune d.txt /usr/include/ustat.h
+addfile /cities/goa e.txt /usr/include/termio.h
+updatefile /cities/goa/e
+updatefile /cities/goa/abcdefgh.txt /usr/include/syslog.h
+updatefile /cities/goa/e.txt /user/myfile
+updatefile /cities/goa/e.txt /usr/include/poll.h
+copyfile /cities/bangalore/a.txt 
+copyfile /cities/bangalore/abcdefghik.txt
+copyfile /cities/bangalore/a.txt /cities/kolkata
+unmountvfs cities

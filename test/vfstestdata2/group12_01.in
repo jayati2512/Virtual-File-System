@@ -1,0 +1,20 @@
+createvfs ROOT 1024
+mountvfs ROOT
+makedir / home
+makedir /home/ a
+makedir /home/a/ b
+makedir /home/ c
+makedir /home/ d
+addfile /home/a/b/ add1.txt /usr/include/stdio.h
+addfile /home/a/b/ add2.txt /usr/include/stdio.h
+listfile /home/a/add1.txt /tmp/out1.txt
+listfile /home/a/b/add2.txt /tmp/out2.txt
+makedir / d
+deletedir /home/c/
+deletedir /c/
+addfile /home/a/b/ addout2.txt /usr/include/stdio.h
+removefile /home/a/b/addout1.txt
+makedir /home/ z
+exportfile /home/a/b/addout.txt expout.txt
+listfile /home/a/b/addout.txt /usr/include/listfileout.txt
+movefile /home/a/b/addout2.txt /home/d

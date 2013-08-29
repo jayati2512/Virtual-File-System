@@ -1,0 +1,25 @@
+createvfs vfs_project_demonstration_mtech 1024
+createvfs person
+createvfs person 1024
+unmountvfs person
+makedir /pen
+mountvfs person
+makedir /name
+makedir /address
+makedir /name first_name
+makedir /name last_name
+makedir /name middle_name
+makedir /address apartment_no
+makedir /address street
+makedir
+addfile /name/first_name alphabet.txt user/include
+addfile /name/middle_name number.txt user/include
+addfile /name/last_name num.txt user/include
+searchfile num /tmp
+removefile 
+movefile /name/last_name/num.txt /address/street
+copyfile /address/street/num.txt /name/last_name
+unmountvfs person
+exportfile /name/middle_name number.txt user/include
+mountvfs person
+listdir 

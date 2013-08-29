@@ -1,0 +1,12 @@
+createvfs vfsdemo 500
+mountvfs vfsdemo
+makedir /d1/d2 d3
+addfile /d1/d2/d3 abcd.txt /usr/include/stdlib.h
+addfile /d1/d2/d3 abcd.txt /usr/include/stab.h
+unmountvfs vfsdemo
+mountvfs vfsdemo
+listdir / 1 /tmp/output_listdir.txt
+unmountvfs vfsdemo
+mountvfs vfsdemo
+listdir / 0 /tmp/output_listdir.txt
+unmountvfs vfsdemo

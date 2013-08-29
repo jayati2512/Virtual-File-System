@@ -1,0 +1,12 @@
+createvfs demo 1024
+mountvfs demo 
+makedir home/ medir
+makedir home/ medir
+makedir home/medir
+makedir home/medir youdir
+makedir home/medir itdir
+movedir home/medir/youdir home/medir/itdir
+movedir home/medir/itdir
+deletedir home/medir
+deletedir home/me
+unmountvfs demo

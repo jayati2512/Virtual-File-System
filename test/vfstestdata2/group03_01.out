@@ -1,0 +1,5 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+FILESYSTEM_FULL
+unmountvfs_SUCCESS

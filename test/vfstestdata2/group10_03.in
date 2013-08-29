@@ -1,0 +1,7 @@
+createvfs demo 1024
+mountvfs demo
+makedir / medir
+makedir /medir youdir
+movedir /medir/youdir /medir
+deletedir /medir
+unmountvfs demo

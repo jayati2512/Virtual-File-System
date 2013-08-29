@@ -1,0 +1,11 @@
+createvfs vfs 1024
+mountvfs vfs
+createvfs vfs 1024
+makedir /a/b/c/d/e/  f
+makedir /a/b/c/d/e/  f
+makedir /a/b/c/d/e/  f
+makedir /a/b/c/d/e/  f
+addfile /a/b/c/d/ s.txt /usr/include/ustat.h
+exportfile /a/b/c/d/s.txt /tmp/exportfile.txt 
+searchfile s.txt /tmp/search.txt
+unmountvfs vfs 

@@ -1,0 +1,11 @@
+createvfs demo 2
+createvfs demo 22
+mountvfs demo
+makedir /home/ bin
+addfile /home/bin/a.txt 
+unmountvfs demo
+movefile /home/bin/a.txt /home/bin.txt
+mountvfs demo
+updatefile /home/bin/d.txt /usr/include/b.txt
+unmountvfs demo1
+unmountvfs demo

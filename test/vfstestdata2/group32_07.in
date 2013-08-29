@@ -1,0 +1,11 @@
+createvfs vfs 
+mountvfs vfs
+createvfs iiitb 1024
+mountvfs iiitb
+makedir / /
+makedir /a/b/c/d/e/  f
+deletedir /a/b/c/d/f/h
+movedir /a/ /c/ 
+listdir /a/ 1 /tmp/out.txt  
+unmountvfs vfs 
+unmountvfs iiitb

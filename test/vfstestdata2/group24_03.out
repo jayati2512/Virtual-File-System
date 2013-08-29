@@ -1,0 +1,19 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+deletedir_FAILURE DIRECTORY_IS_NOT_EMPTY
+listdir_SUCCESS
+listdir_FAILURE "CANNOT_FIND_SPECIFIED_PATH_OR_DIR"
+listdir_FAILURE "INVALID_FLAG"
+addfile_FAILURE "INVALID_CHARACTER_IN_FILENAME"
+addfile_SUCCESS
+searchfile_SUCCESS
+addfile_SUCCESS
+unmountvfs_FAILURE "DATA_FILE_NOT_FOUND"
+unmountvfs_SUCCESS

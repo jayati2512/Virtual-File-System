@@ -1,0 +1,17 @@
+createvfs myvfs1 103
+createvfs myh 109
+mountvfs myvfs1
+makedir /usr/ hello
+addfile /usr/hello/ a.txt /usr/include/alloca.h
+addfile /usr/hello/ a.txt /usr/include/poll.h
+movedir /usr/hello/ /
+updatefile /usr/hello/a.txt /usr/include/endian.h
+exportfile /usr/hello/a.txt /tmp/
+removefile /usr/a.txt
+makedir /usr/hello/ hi
+addfile /usr/hello/hi/ abc.txt /usr/include/lastlog.h
+searchfile a /tmp/out.txt 
+deletedir /usr/hello/
+makedir /usr/hello/ kj
+listdir /usr/ 1 /tmp/listout.txt
+unmountvfs myvfs1

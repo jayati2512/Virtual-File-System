@@ -1,0 +1,24 @@
+createvfs vfs1 1000
+createvfs vfs1 1000
+createvfs vfs2 3000
+mountvfs 
+mountvfs vfs2
+mountvfs vfs1
+unmountvfs vfs1
+addfile / sample.txt /user/include/sample.txt
+mountvfs vfs1
+makedir / dir1
+addfile /dir1 sample.txt /user/include/sample.txt
+addfile /dir1 /sa/mple.txt /user/include/sample.txt
+listfile
+listfile /dir1/sample.txt /tmp/test.jpg
+listfile /dir1 /tmp/test.txt
+listfile /dir1/sample.txt /tmp/test.txt
+updatefile 
+updatefile /dir1 /user/include/sample.txt
+updatefile /dir1/sample.txt /user/include/sample.txt
+removefile
+removefile /sample.txt
+removefile /sample.txt
+unmountvfs vfs2
+unmountvfs vfs1

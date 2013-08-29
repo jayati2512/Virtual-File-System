@@ -1,0 +1,9 @@
+createvfs vfs3 1024
+mountvfs vfs3
+addfile /home fname /usr/include/wait.h
+addfile / fname /usr/include/wait.h
+unmountvfs vfs3
+mountvfs vfs3
+addfile / fname /usr/include/wait.h
+updatefile /home/sub1/sub2/fname /usr/include/syslog.h
+unmountvfs vfs3

@@ -1,0 +1,21 @@
+createvfs demo28 1024
+mountvfs demo28
+makedir / dir1
+addfile / f1 /usr/include/input1.txt
+addfile / f2 /usr/include/input2.txt
+makedir / dir2
+addfile /dir1/ f3 /usr/include/input3.txt
+makedir /dir2 dir3
+addfile /dir1/ f4 /usr/include/input4.txt
+makedir /dir2 dir4
+makedir /dir1/dir3 dir5
+makedir /dir1/dir3/dir5 dir6
+makedir /dir1/dir3/dir5/dir6 dir7
+addfile /dir1/dir3/dir5/dir6 f5 /usr/include/input5.txt
+addfile /dir1/dir3/dir5/dir6 f6 /usr/include/input6.txt
+addfile /dir1/dir3/dir5/dir6 f7 /usr/include/input7.txt
+movedir /dir1/dir3/dir5/dir6 /dir8
+listdir / 1 /tmp/output1.txt
+listdir /dir8 0 /tmp/output2.txt
+searchfile f /tmp/output3.txt
+movedir / /dir1

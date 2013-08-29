@@ -1,0 +1,16 @@
+createvfs vfs1 10
+mountvfs vfs1
+makedir /home/ dir1
+makedir /home/ dir2
+makedir /home/dir1 dir3
+makedir /home/dir2 dir4
+addfile /home/dir1/ apple /usr/include/ustat.h
+addfile /home/ appy /usr/include/wait.h
+addfile /home/ orange /usr/include/alloca.h
+addfile /home/ apricot /usr/include/poll.h
+listfile /home/appy vfs1
+updatefile /home/appy /usr/include/poll.h
+listfile /home/appy out2
+searchfile o searchout.txt
+removefile /home/dir1/apple
+unmountvfs vfs1

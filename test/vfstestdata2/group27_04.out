@@ -1,0 +1,14 @@
+createvfs_SUCCESS
+makedir_FAILURE VFS_NOT_MOUNTED
+addfile_FAILURE VFS_NOT_MOUNTED
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_FAILURE FILE_TOO_LARGE
+addfile_SUCCESS
+addfile_FAILURE FILE_ALREADY_EXISTS
+listfile_FAILURE NOT_A_TEXT_FILE
+listfile_SUCCESS
+exportfile_SUCCESS
+unmountvfs_SUCCESS

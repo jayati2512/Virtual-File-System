@@ -1,0 +1,9 @@
+createvfs /vfs
+createvfs vfs 2900
+createvfs vfs@databasemanagementsystemproject 1000
+createvfs
+createvfs vfs
+createvfs 1000
+createvfs vfs 1000
+unmountvfs vfs
+movedir dir dir1

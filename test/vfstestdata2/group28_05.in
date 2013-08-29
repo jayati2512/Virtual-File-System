@@ -1,0 +1,22 @@
+createvfs myvfs
+createvfs myvfs 1024 
+addfile /home/temp1/temp2 a.txt /usr/include/b.txt
+mountvfs myvfs
+mountvfs myvfs
+makedir / 
+makedir / home
+makedir / home
+makedir /home temp1
+addfile /home/temp1 a.txt /usr/include/b.txt
+addfile /home/temp1 x/y.txt /usr/include/c.txt
+addfile /home/temp1 p.txt /usr/include/c.txt
+exportfile /home/temp1/a.txt /tmp
+makedir /home/temp1 temp2
+exportfile /home/temp1/temp2 /tmp
+unmountvfs myvfs1
+unmountvfs myvfs
+createvfs myvfs 1024
+unmount myvfs
+makedir / home1
+deletedir /home/temp1/temp2/temp3
+listdir /home/temp1/temp2 0 /tmp/list.txt

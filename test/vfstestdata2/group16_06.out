@@ -1,0 +1,16 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+listdir_SUCCESS
+addfile_SUCCESS 
+copyfile_FAILURE CANNOT_FIND_DESTINATIONFILE
+updatefile_FAILURE INTERNAL_FILE_NOT_FOUND
+addfile_SUCCESS 
+removefile_SUCCESS 
+searchfile_SUCCESS 0
+searchfile_SUCCESS 1
+listfile_SUCCESS 
+exportfile_SUCCESS
+listfile_SUCCESS
+unmountvfs_SUCCESS

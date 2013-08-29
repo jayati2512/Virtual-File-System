@@ -1,0 +1,11 @@
+createvfs 00demo 12
+mountvfs 00demo
+mountvfs demo1
+updatefile /home/h.txt /tmp/a.txt
+makedir /home/ b
+addfile /home/b/ a.txt /tmp/b.txt
+copyfile /home/ /home/b/a.txt
+listfile /home/ab/ /tmp/c.txt
+listfile /home/b/a.txt
+unmountvfs 0demo
+unmountvfs 00demo

@@ -1,0 +1,28 @@
+createvfs semester 1000
+mountvfs semester
+unmountvfs semester
+mountvfs semester
+makedir /first dm
+makedir /first nc
+makedir /first algo
+makedir /first pas
+makedir /first/dm/project/vfs/group16 files
+makedir /first/nc/comm/assignment coding
+makedir /first/dm/project/vfs/group16 ncstudy
+listdir / 1 lsdir03.1
+movedir /first/dm/project/vfs/group16/ncstudy /first/nc/comm
+listdir / 1 lsdir03.2
+deletedir /first/dm/project/vfs
+deletedir /first/dm/project/vfs/group16/files
+listdir / 1 lsdir03.3
+addfile /first/dm/project/vfs/group16 projectreport.txt /usr/include/math.h
+addfile /first/nc/comm/ncstudy codinggain.txt /usr/include/stdio.h
+listfile /first/nc/comm/ncstudy/codinggain.txt lsfile.1
+updatefile /first/nc/comm/ncstudy/codinggain.txt correcthammingcode.txt
+listfile /first/nc/comm/ncstudy/codinggain.txt lsfile.2
+copyfile /first/nc/comm/ncstudy/codinggain.txt /first/nc/fun.txt
+removefile /first/nc/comm/ncstudy/codinggain.txt
+movefile /first/dm/project/vfs/group16/projectreport.txt /first/dm/project/projectreport.txt
+listfile /first/dm/project/projectreport.txt lsfile.3
+searchfile projectreport.txt sfile.1
+unmountvfs semester

@@ -1,0 +1,11 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+listdir_SUCCESS
+addfile_FAILURE:FILE_TOO_LARGE
+listfile_FAILURE VFS_INSUFFICIENT_ARGUMENTS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+listfile_FAILURE SOURCE_FILE_PATH_NOT_FOUND

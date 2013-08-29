@@ -1,0 +1,21 @@
+createvfs fs1 1025
+createvfs fs2 1024
+mountvfs fs1
+mountvfs fs2
+addfile / file1.txt /usr/include/stab.h
+makedir / dir1
+copyfile /file1.txt /dir1/f1.txt
+listdir / 1 /tmp/out.txt
+makedir /dir1/dir2/dir3 dir2
+addfile /dir1/dir2/dir3/dir2 file1.txt /usr/include/stab.h
+copyfile /dir1/dir2/dir3/dir2/file1.txt /
+listdir / 1 /tmp/out.txt
+updatefile /dir1/dir2/dir3/file1.txt /usr/include/stab.h
+exportfile /dir1/dir2/dir3/file1.txt /usr/include/stab.h
+exportfile /file1.txt /tmp/output_list_dir.txt
+addfile /dir1/ file1.txt /usr/include/stab.h
+listdir /dir1 1 /tmp/out.txt
+searchfile out.txt
+makedir /dir1/ dir2/dir
+listdir /dir1/dir2/dir3 0 /tmp/out.txt
+unmountvfs fs2

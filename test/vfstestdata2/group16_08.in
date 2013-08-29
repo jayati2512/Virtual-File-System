@@ -1,0 +1,20 @@
+createvfs veg 1000
+mountvfs veg 
+makedir /indian/north/delhi dosa
+addfile /indian/north first.txt /usr/include/math.h
+makedir /indian/north/delhi abc
+makedir /us/indiana/continental abc
+addfile /indian/north/delhi chapati.txt /usr/include/stdio.h
+addfile /us/indiana/continental e.txt /usr/include/err.h
+listdir / 1 /tmp/listdiroutput2
+searchfile chapati.txt /tmp/searchoutput1 
+movedir /us/indiana/continental /indian/north/delhi
+searchfile e.txt /tmp/searchoutput2
+listdir / 1 /tmp/listdiroutput
+listfile /indian/north/chapati.txt /temp/temp.txt
+removefile /indian/north/chapati.txt
+searchfile chapati.txt /tmp/searchoutput2
+deletedir /indian
+searchfile chapati.txt /tmp/searchoutput3
+listdir / 1 /tmp/abc
+unmountvfs veg

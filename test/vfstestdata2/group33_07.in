@@ -1,0 +1,13 @@
+createvfs vfs_01 1024
+mountvfs vfs_01
+addfile
+addfile /temp/
+addfile /temp/ demo.txt
+addfile /temp/ demo.h /usr/include/stdio.h
+addfile /temp/ clear /usr/bin/clear
+addfile /temp/ gcc /usr/bin/gcc
+addfile /temp/ g/cc /usr/bin/gcc
+addfile /temp/ demo.h /usr/include/stdio.h
+addfile /temp/ xyz /usr/bin/xyz
+unmountvfs vfs_01
+addfile /temp/ demo.h /usr/include/stdio.h

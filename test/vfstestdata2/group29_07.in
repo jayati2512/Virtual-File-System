@@ -1,0 +1,15 @@
+createvfs fgtvfs 1024
+mountvfs sgdvfs
+mountvfs fgtvfs
+deletedir /melon
+makedir 
+makedir / orange
+addfile /orange /usr/include/stdio.h
+addfile /orange orn.txt /usr/include/stdio.h
+deletedir /orange
+deletedir /orange/orn.txt
+deletedir /orange
+makedir / apple
+listdir /apple -R /tmp/logfl.txt
+movefile /orange/orn.txt /apple
+unmountvfs fgtvfs

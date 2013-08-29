@@ -1,0 +1,19 @@
+createvfs demo 1024
+mountvfs demo
+makedir / newdir
+makedir / newdir2
+makedir /newdir/ sub3
+makedir /newdir2/ sub4
+addfile /newdir /usr/include/syscall.h 
+addfile /newdir adding.txt /usr/include/syscall.h 
+movefile /newdir
+listdir  
+listdir /sub1 0 /tmp
+addfile /newdir create.txt  
+listfile /newdir/adding.txt 
+updatefile /usr/include/adding.txt  
+updatefile /tmp/added.txt 
+movedir /newdir2/sub4 /tmp
+movedir /newdir2/sub2 /home
+copyfile /newdir/check.txt newdir1/adding.txt
+unmountvfs demo

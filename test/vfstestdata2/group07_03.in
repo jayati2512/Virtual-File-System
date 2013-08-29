@@ -1,0 +1,10 @@
+createvfs vfs 1024
+mountvfs
+mountvfs vfs
+mountvfs vfs
+unmountvfs vfs1
+makedir /
+makedir / /dir.txt
+makedir / dir
+makedir / dir
+deletedir

@@ -1,0 +1,29 @@
+createvfs demo
+createvfs demo/a 52
+createvfs demo 1245
+createvfs demo 47
+createvfs demo2 47
+createvfs demo 52
+mountvfs demo1
+makedir /home/ sub1
+mountvfs demo
+mountvfs demo
+makedir /home dir/2
+makedir  /home
+makedir  /home/sub1 sub2
+makedir  /home/sub1 sub2
+deletedir /home/sub1/sub3
+deletedir /home/sub1
+deletedir
+deletedir /home/sub1/sub2
+listdir /home 0 /tmp
+listdir /home 1 /tmp
+unmountvfs demo1
+unmountvfs demo2
+unmountvfs demo
+mountvfs demo2
+makedir /home/sub1 sub2
+unmountvfs demo2
+mountvfs demo2
+listdir /home 0 listdiroutput
+unmountvfs demo2

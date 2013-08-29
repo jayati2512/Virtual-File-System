@@ -1,0 +1,20 @@
+createvfs demo2 204
+mountvfs demo2
+addfile /folder1 def.txt abc
+addfile /folder3 def.txt abc
+addfile /folder4 /def.txt abc
+addfile /folder2 gob.xls ggc
+addfile /folder1 def.txt ggc
+listfile /folder1/def.txt /home/bill/Desktop
+exportfile /folder2/gob.xls /home/bill/Desktop
+movefile /folder1/def.txt /folder2/abc.txt
+movefile /folder1/def.txt /folder2
+copyfile
+searchfile def.txt searchresult1.txt
+removefile /folder2/def.txt
+searchfile def.txt searchresult2.txt
+unmountvfs demo2
+unmountvfs demo2
+mount demo
+listdir /folder3
+makedir /folder9

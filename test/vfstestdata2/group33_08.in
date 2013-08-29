@@ -1,0 +1,13 @@
+createvfs vfs_01 1024
+createvfs vfs_02 -1
+createvfs vfs_01 576
+createvfs vfs/_03 1000
+mountvfs vfs_02
+mountvfs vfs_01
+makedir /usr/include/test/ usr
+makedir /usr/ te/st
+addfile /usr/include/ stdio.txt /usr/include/poll.h
+updatefile /usr/include/stdio.txt /usr/include/stdio.h
+updatefile /usr/stdio.h /usr/include/stdio.h
+listfile /usr/include/stdio.txt /tmp/stdio.txt
+listfile /usr/stdio.h /tmp/stdio.h

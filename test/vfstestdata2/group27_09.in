@@ -1,0 +1,28 @@
+createvfs demo 20
+mountvfs demo
+makedir /home/sub1/ sub2
+makedir /etc/games/ movies
+makedir /share/usr/ dummy
+makedir /raj/rahhul/ravi/bhuvan/ragfavad/ dhiraj
+deletedir /home/sub1/
+deletedir /home/sub1/sub2/
+addfile / abc.h /usr/include/syscall.h
+addfile / def.txt /usr/include/blahblah.txt
+addfile /share/usr/ ghi.h /usr/include/wait.h
+unmountvfs demo
+mountvfs demo
+copyfile /share/usr/ghi.h /etc/games/
+listdir / 1 abcd
+addfile / abc.h /usr/include/wait.h
+exportfile /share/usr/ghi.h /tmp/tmppEL2Rt
+unmountvfs demo
+mountvfs demo
+movefile /share/usr/ghi.h /etc
+unmountvfs demo
+mountvfs demo
+removefile /etc/ghi.txt
+removefile /share/usr/ghi.h
+unmountvfs demo
+mountvfs demo
+listdir / 1 /tmp/abcd
+unmountvfs demo

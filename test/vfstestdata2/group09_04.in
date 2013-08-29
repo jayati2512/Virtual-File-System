@@ -1,0 +1,20 @@
+createvfs COUNTRY 1024
+unmountvfs COUNTRY
+mountvfs COUNTRY
+makedir / state
+makedir /state capital
+makedir / union_territory
+makedir /state/capital governor
+makedir /state/capital/governor chiefminister
+makedir / village
+unmountvfs COUNTRY
+createvfs TEMPLE 1024
+mountvfs TEMPLE
+makedir / places
+makedir /places famous_place 
+movedir /places/famous_place/priest
+deletedir /union_territory
+makedir / watch
+makedir /watch brand
+makedir /watch/brand price
+unmountvfs TEMPLE

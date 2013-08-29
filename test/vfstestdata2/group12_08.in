@@ -1,0 +1,21 @@
+createvfs demo 1024
+unmountvfs demo
+mountvfs demo
+makedir / origin
+makedir / download
+makedir /download/ folder1
+deletedir /download/files/
+addfile /download/ file1.txt /usr/include/
+addfile /origin/ file3.txt /usr/include/
+removefile /download/ file3.txt
+mountvfs demo
+addfile /download/ file0.txt /usr/include/
+movedir /origin/ /download/
+listdir /download/ 0 /usr/inlude/list.txt
+addfile /download/ file2.txt /usr/include
+updatefile /download/file2.txt /usr/include/list2.txt
+movefile /download/file2.txt /origin/file3.txt
+exportfile /download/file2.txt
+searchfile file0 output.txt
+unmountvfs deemo
+unmountvfs demo

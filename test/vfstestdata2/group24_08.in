@@ -1,0 +1,10 @@
+createvfs abc 1024
+mountvfs abc
+makedir / /a
+makedir /a aa
+makedir /a bb
+makedir /a cc
+makedir /a/aa ddd
+makedir /a/dd
+deletedir /a/dd
+unmountvfs abc

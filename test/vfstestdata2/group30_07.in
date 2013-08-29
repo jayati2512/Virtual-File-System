@@ -1,0 +1,12 @@
+createvfs demo 10
+mountvfs demo
+unmountvfs demo
+mountvfs demo
+makedir / /
+makedir / home
+makedir /home sub2
+mountvfs demo
+addfile /home/sub2 fname /usr/include/wait.h
+updatefile /home/sub2/fname /usr/include/syslog.h
+listfile /home/sub2/fname /tmp/newoutputfile.txt
+exportfile /home/sub2/fname /tmp

@@ -1,0 +1,20 @@
+createvfs fs1 1000
+mountvfs fs1
+unmountvfs fs1
+removefile /file1.txt
+mountvfs fs1
+addfile / file1.txt /usr/include/stab.h
+makedir / dir1
+copyfile /file1.txt /dir1/f1.txt
+listdir / 1 /tmp/output_list_file.txt
+exportfile /dir1/file1.txt /tmp/output_export_file.txt
+removefile /dir1/dir2
+searchfile /file1.txt /tmp/output_search_file.txt
+deletedir /dir
+addfile /dir1/ file1.txt /usr/include/stab.h
+listfile /dir1/file1.txt
+listdir / 5 out.txt
+makedir /dir1/ dir2
+movefile /dir1/file1.txt /dir1/dir2/file1.txt
+unmountvfs fs2
+unmountvfs fs1

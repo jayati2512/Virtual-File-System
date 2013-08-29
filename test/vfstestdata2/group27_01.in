@@ -1,0 +1,13 @@
+createvfs MyVFS/@1
+createvfs @MyVFS01 100
+mountvfs @MyVFS01
+makedir /Dir1/ SubD!r1
+movedir /Dir1/SubD!r1/ /Dir2/
+mountvfs @MyVFS01
+unmountvfs @MyVFS01
+addfile /Dir1/SubD!r1/ m.em/ory.txt /usr/include/memory.h
+mountvfs @MyVFS01
+addfile /Dir1/SubD!r1/ poll.txt /usr/include/poll.h
+updatefile /Dir1/SubD!r1/polling.txt /usr/include/memory.h
+unmountvfs @MyVFS01
+updatefile /Dir1/SubD!r1/poll.txt /usr/include/ary.h

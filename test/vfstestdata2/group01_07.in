@@ -1,0 +1,7 @@
+createvfs test5 1020
+mountvfs test4
+unmountvfs test4
+mountvfs test5
+makedir / home/sub/sub1
+listdir /home/ 1 /tmp/output.txt
+unmount test5

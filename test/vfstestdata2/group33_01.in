@@ -1,0 +1,22 @@
+createvfs vfs_6fgfdhgdgfdhfhghdhfghfdghhdfhgdfhghfdhg 1024
+createvfs vfs_1 1024
+mountvfs vfs_1
+makedir /home/user/ abc 
+addfile /home/user/ test.txt
+movedir /home/ /gome/
+makedir / gome
+deletedir /home/
+removefile /home/user/test.txt
+deletedir /home/
+addfile / test.txt /usr/include/stdio.h
+addfile / test.txt /usr/include/poll.h
+exportfile 
+exportfile /test.txt /tmp/output.txt
+listfile /test1.txt /tmp/output.txt
+listfile /test.txt
+listfile /test.txt /tmp/output1.txt
+listdir / 1 /tmp/output2.txt
+unmountvfs 
+unmountvfs vfs_1
+createvfs iop[ 1025
+makedir / home

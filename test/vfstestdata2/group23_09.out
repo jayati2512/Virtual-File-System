@@ -1,0 +1,10 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_FAILURE:FILE_ALREADY_EXISTS
+addfile_FAILURE:INVALID_CHARACTER_IN_FILENAME
+addfile_FAILURE:destination directory does not exists
+listfile_FAILURE:NOT_A_TEXT_FILE
+listfile_SUCCESS
+listfile_FAILURE:SOURCE_FILE_PATH_NOT_FOUND

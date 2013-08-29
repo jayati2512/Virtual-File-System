@@ -1,0 +1,18 @@
+createvfs myvfs3 30
+mountvfs myvfs3
+makedir /usr/ hello
+unmountvfs myvfs3
+makedir /usr/ hi
+mountvfs myvfs3
+makedir /usr/ hi
+addfile /usr/hello/ a.txt /usr/include/memory.txt
+addfile /usr/hello/ abc.txt /usr/include/alis.txt
+addfile /usr/hello/ abc.txt /usr/include/re_comp.txt
+addfile /usr/hi/ abc.txt /usr/include/re_comp.txt
+listfile /usr/ /tmp/
+copyfile /usr/hi/ab.txt /usr/
+exportfile /usr/hello/a.txt /tmp/
+deletedir /usr/h/
+deletedir /usr/hi/
+listdir /usr/hello/ 2 /tmp/a.txt
+unmountvfs myvfs3

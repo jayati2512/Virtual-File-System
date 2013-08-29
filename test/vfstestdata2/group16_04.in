@@ -1,0 +1,19 @@
+createvfs songs 1000
+mountvfs songs
+makedir /music/songs audio
+makedir /music/songs video
+makedir /music/songs/audio bollywood
+makedir /music/songs/audio hollywood
+makedir /music/songs/video hollywood
+listdir / 0 lsdir04.1
+listdir / 1 lsdir04.2
+deletedir /music/songs/audio/bollywood
+movedir /music/songs/video/hollywood /music/songs/audio
+listdir / 1 lsdir04.3
+makedir /music/songs/audio/hollywood/linkinpark
+addfile /music/songs/audio/hollywood/linkinpark lgm.txt /usr/include/
+makedir /movies/hollywood avengers
+addfile /movies/hollywood/avengers avengers.srt /usr/include/math.h
+copyfile /movies/hollywood/avengers/avengers.srt /movies/hollywood/avengers/fun.txt
+searchfile avengers.srt sfile04.1
+unmountvfs songs 

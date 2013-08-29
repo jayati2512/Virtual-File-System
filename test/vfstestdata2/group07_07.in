@@ -1,0 +1,9 @@
+createvfs vfs 1000
+mountvfs 
+mountvfs vfs1
+mountvfs vfs
+mountvfs vfs
+addfile / input.h /usr/include/stdio.h
+copyfile /input.h
+copyfile /input1.h /input.h
+copyfile /input.h /input1.h

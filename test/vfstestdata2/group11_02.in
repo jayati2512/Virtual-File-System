@@ -1,0 +1,18 @@
+createvfs myvfs2 678
+makedir /usr/ hello
+listdir /usr/hello/ 1 /tmp/a.txt
+mountvfs myvfs2
+makedir /usr/ hello
+makedir /usr/ hello
+addfile /usr/hello/ a.txt /usr/include/poll.h
+addfile /usr/hello/ a.txt /usr/include/poll.h
+updatefile /usr/hello/a.txt /usr/include/stab.h
+exportfile /tmp/bn.txt
+makedir /usr/ hell
+addfile /usr/hell/ b.txt /usr/include/poll.h
+movefile /usr/hello/a.txt /usr/hell/a.txt
+copyfile /usr/hello/a.txt /usr/hell/bb.txt
+searchfile a
+movedir /usr/hello/ /usr/hell/
+listdir /usr/hello/ 0 /tmp/abc.txt
+unmountvfs myvfs2

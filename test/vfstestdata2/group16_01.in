@@ -1,0 +1,27 @@
+createvfs college 1000
+mountvfs college
+unmountvfs college
+mountvfs college
+makedir /IIITB/IIITBStudy/FirstSem DM
+makedir /songs/bands/ark livingthings
+addfile /IIITB/IIITBStudy first.txt /usr/include/syscall.h
+listdir / 1 /tmp/abc.txt
+makedir /IIITB/IIITBStudy/FirstSem/oneer DM
+addfile /songs/bands second.txt /usr/include/wait.h
+deletedir /songs/bands/linkinpark/livingthings
+listdir / 1 /tmp/listdiroutput.txt
+listfile /songs/bands/second.txt /tmp/new.txt
+searchfile first.txt /tmp/search.txt
+makedir /IIITB/IIITBStudy/FirstSem DM
+listdir / 1 /tmp/listdiroutput.txt
+searchfile second.txt /tmp/search1.txt
+copyfile /songs/bands/second.txt /IIITB/IIITBStudy/first.txt
+movefile /IIITB/IIITBStudy/first.txt /songs/second.txt
+searchfile first.txt /tmp/search2.txt
+searchfile second.txt /tmp/search2.txt
+movedir /songs/bands /IIITB/IIITBStudy
+deletedir /IIITB/IIITBStudy/bands/linkinpark/livingthings
+makedir /ganguly/dqqq l
+deletedir /ganguly/dqqq/l
+listdir / 1 /tmp/listdiroutput.txt
+unmountvfs college

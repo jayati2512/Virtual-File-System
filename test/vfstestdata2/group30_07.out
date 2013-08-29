@@ -1,0 +1,12 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_FAILED INVALID_CHARACTER_IN_DIRNAME
+makedir_SUCCESS
+makedir_SUCCESS
+mountvfs_FAILED VFS_ALREADY_MOUNTED
+addfile_SUCCESS
+updatefile_SUCCESS
+listfile_SUCCESS
+exportfile_SUCCESS

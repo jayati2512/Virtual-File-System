@@ -1,0 +1,11 @@
+createvfs de/mo/out 1024
+createvfs demo 100
+makedir /demo first
+makedir /demo second
+makedir /demo/first inside
+addfile /demo/first/inside aaa.txt /user/include/teoll.h
+addfile /demo/first/inside
+addfile /demo/first/inside bbb.txt /user/include/teoll.h
+deletedir first
+removefile /demo/first/inside/aaa.txt 
+unmountvfs demo

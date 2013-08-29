@@ -1,0 +1,17 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+movefile_SUCCESS
+movefile_FAILURE VFS_INSUFFICIENT_ARGUMENTS
+movefile_SUCCESS
+movefile_FAILURE CANNOT_FIND_SOURCEFILE
+movefile_FAILURE CANNOT_FIND_SOURCEFILE
+movefile_SUCCESS
+unmountvfs_SUCCESS

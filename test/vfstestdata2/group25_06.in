@@ -1,0 +1,11 @@
+createvfs test 1000
+mountvfs test
+unmountvfs test
+createvfs test1 100
+mountvfs test1
+makedir /a/b/c/d/e f
+deletedir /
+movedir /a/b/c /
+listdir / 1 /tmp/op1.txt
+searchfile b /tmp/op2.txt
+unmountvfs test1

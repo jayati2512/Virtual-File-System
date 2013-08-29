@@ -1,0 +1,14 @@
+mountvfs demo28
+createvfs demo28 1024
+unmountvfs demo28
+mountvfs demo28
+mountvfs demo28
+makedir / dir1
+makedir /dir1 dir2
+makedir /dir1/dir2 dir3
+delete /dir3
+listdir /
+addfile /dir1/dir2 file1 /usr/include/file1.txt
+listfile /
+exportfile /dir1/dir2/file2 /tmp
+searchfile file1 /tmp/output1.txt

@@ -1,0 +1,11 @@
+createvfs vfs_c 1024
+mountvfs vfs_c
+makedir / home
+unmountvfs vfs_c
+mountvfs vfs_c
+makedir /home test
+makedir /usr test
+addfile /usr/test addfile.txt /usr/include/syscall.h
+listdir / 1 /temp/listdiroutput.txt
+unmontvfa
+unmountvfs vfs_c

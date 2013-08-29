@@ -1,0 +1,9 @@
+createvfs vfs 100
+mountvfs vfs
+makedir / dir1
+addfile / file.txt /usr/include/stab.h
+addfile / file1.txt /usr/include/elf.h
+listfile /file1.txt /tmp/output_list_file.txt
+removefile /file1.txt
+exportfile /file1.txt /tmp/output_export_file.txt
+unmountvfs vfs

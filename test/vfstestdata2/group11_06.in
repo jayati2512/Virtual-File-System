@@ -1,0 +1,20 @@
+createvfs myvfs7 1024
+createvfs myvfs7 1024
+mountvfs myvfs7
+makedir /usr/ hello
+makedir /usr/ hello
+listdir /uj
+addfile /usr/hello/ a.txt /usr/include/poll.h
+listfile /usr/hello/ /tmp/a.jpg
+updatefile /usr/hello/a.txt /usr/include/endian.h
+removefile /usr/hello/a.txt
+addfile /usr/hello a.txt /usr/include/poll.h
+movefile /usr/hello/a.txt /usr/include/p
+unmountvfs myvfs
+unmountvfs myvfs7
+searchfile a /tmp/out.txt
+mountvfs myvfs7
+searchfile a /tmp/out.txt
+unmountvfs 
+deletedir /usr/hello
+unmountvfs myvfs7

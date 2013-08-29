@@ -1,0 +1,23 @@
+createvfs 30
+createvfs gh/sh 50
+createvfs thenameofthisvfsissolongthatyoucannotcreateit 30
+mountvfs thenameofthisvfsissolongthatyoucannotcreateit
+createvfs group27 40
+makedir / home
+mountvfs group27
+makedir / home
+makedir etc
+mountvfs group27
+makedir / tmp
+makedir / home
+makedir /home/ abc
+makedir /home/ abc
+unmountvfs group27
+unmountvfs group27
+mountvfs group27
+deletedir /home/abc/
+makedir /home/ def
+makedir / hft
+movedir /hft/ /home/def/
+listdir / 1 /tmp/output_listdir.txt
+unmountvfs group27

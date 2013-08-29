@@ -1,0 +1,7 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS //Addfile failure because input file not available
+listfile_SUCCESS //Listfile failure because not a text file
+removefile_SUCCESS //Removefile error because file was not added
+unmountvfs_SUCCESS

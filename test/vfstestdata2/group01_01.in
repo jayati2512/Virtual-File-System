@@ -1,0 +1,18 @@
+createvfs test 1024 
+mountvfs test 
+unmountvfs test 
+mountvfs test 
+makedir / home 
+listdir / 0 /tmp/listdiroutput.txt 
+unmountvfs test 
+mountvfs test 
+listdir / 0 /tmp/listdiroutput.txt 
+mountvfs test 
+addfile /home/sub1/ exam.txt /usr/include/syscall.h 
+unmountvfs 
+unmountvfs test 
+deletedir /home/ 
+mountvfs test 
+deletedir /home 
+deletedir /home/sub1 
+unmountvfs test 

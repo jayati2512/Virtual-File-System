@@ -1,0 +1,23 @@
+createvfs school 1000
+mountvfs school
+unmountvfs school
+mountvfs schoo
+mountvfs school
+makedir /principal/teachers/students play
+makedir /activities/interest sports
+makedir /activities/interest/temp studies-haha
+makedir /activities/interest music
+makedir /activities/interest business
+makedir /activities/interest business
+listdir / 1 /tmp/lsdir02.1.txt
+deletedir /activities/interest/$#2
+deletedir /activities/interest/temp
+deletedir /activities/interest/temp studies-haha
+listdir / 1 /tmp/lsdir02.2.txt
+makedir /activities/interest studies-haha
+makedir /activities/interest junk
+movedir /activities/interest/business /activities/interest/junk
+movedir /activities/interest /activities/interest/junk
+movedir /activities/interest/music
+listdir / 1 /tmp/lsdir02.3.txt
+unmountvfs school

@@ -1,0 +1,32 @@
+createvfs demo1 1024
+mountvfs demo1
+mountvfs demo1
+unmountvfs demo
+unmountvfs demo1
+makedir / a
+mountvfs demo1
+makedir /a/b/c/ d
+makedir /a/b/
+makedir /a/b/c/ d
+createvfs demo2 1024
+unmountvfs demo1
+mountvfs demo2
+makedir /a/b/ c
+makedir / d/e
+deletedir    
+deletedir /a/b/c
+deletedir /a/b/e
+addfile /a/b/ file1.txt /usr/include/poll.h
+addfile /a/b/ file2.txt /usr/include/wait.h
+listfile /a/b/file1.txt /tmp/out_listfile1.txt
+makedir /a/b/c/d/ e
+makedir /f/g/h/ i
+movedir /a/b/ /f/g/ 
+movedir /a/m/ /f/g/
+unmountvfs demo2
+mountvfs demo1
+addfile /a/b/ m1.txt /usr/include/poll.h
+addfile /a/b/ m2.txt /usr/include/wait.h
+listfile /a/b/m1.txt /tmp/out_m1.txt
+unmountvfs demo1
+unmountvfs demo2

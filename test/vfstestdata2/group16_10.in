@@ -1,0 +1,24 @@
+createvfs demo 1000
+mountvfs demo
+makedir /a/b c
+makedir /testdir subdir1
+makedir /testdir/subdir1 subdir2
+addfile /testdir/subdir1 file1.txt /usr/include/syscall.h
+listdir / 1 /tmp/list1.txt
+addfile /testdir/subdir1/subdir2 file2.txt /usr/include/wait.h
+listdir / 1 /tmp/list1.txt
+deletedir /testdir/subdir1/subdir2
+makedir /home/sub1 sub2
+deletedir /fake/subfake
+listdir / 1 /tmp/list2.txt
+listdir / 1 /tmp/list3.txt
+movedir /home/sub1/sub2 /testdir/subdir1
+listdir / 1 /tmp/list3.txt
+unmountvfs demo
+mountvfs demo
+movedir /home/sub1 /testdir/subdir1
+makedir /vaibhav/a/b/c d
+listdir / 1 /tmp/list4.txt
+movedir /vaibhav /home
+listdir / 1 /tmp/list4.txt
+unmountvfs demo

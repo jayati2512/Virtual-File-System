@@ -1,0 +1,12 @@
+createvfs demo $
+mountvfs demo1
+createvfs demo1 1000
+mountvfs demo1
+makedir /home/ b
+makedir /home/b/ c
+addfile /home/ a /usr/include/zlibdefs.h
+addfile /home/bin/ ab /usr/include/stdio.h
+movedir /home/ /home/b/c/
+listfile /home/ab/ /tmp/c.txt
+searchfile a /tmp/c.txt
+unmountvfs

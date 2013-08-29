@@ -1,0 +1,14 @@
+createvfs vfs 1024
+mountvfs vfs
+deletedir dir1
+addfile / stdio.h /usr/include/stdio.h
+addfile / stdio.h /usr/include/studio.h
+makedir / dir1
+makedir / ..dir1
+listdir /dir1 1 /temp/ls1.txt
+updatefile /stdio.h /usr/include/stdlib.h
+movefile /stdio.h /dir1/stdio.h
+movefile /stdio.h /dir1/stdio.h
+mountvfs vfs
+unmountvfs vfs 
+unmountvfs vfs

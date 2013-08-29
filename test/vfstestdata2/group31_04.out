@@ -1,0 +1,11 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_FAILURE VFS_INSUFFICIENT_ARGUMENTS
+deletedir_FAILURE CANNOT_FIND_SPECIFIED_DIR
+makedir_SUCCESS
+deletedir_FAILURE DIRECTORY_IS_NOT_EMPTY
+listdir_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+movedir_SUCCESS
+unmountvfs_SUCCESS

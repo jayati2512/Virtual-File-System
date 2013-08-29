@@ -1,0 +1,13 @@
+createvfs test1 1024
+mountvfs test1
+unmountvfs test1
+mountvfs test1
+makedir / home  																	 
+makedir /home/dira/dirb/dirc/ dird
+makedir /home/dira/dirb/dirc/dird/dire/ dirf
+addfile /dira stdlib.h /usr/include/stdlib.h
+listdir / 1 /tmp/script5output1
+movefile /dira/stdlib.h /home/dira/dirb/dirc
+listdir / 1 /tmp/script5output2
+deletedir /home/dira/dirb/dirc/dird
+unmountvfs test1

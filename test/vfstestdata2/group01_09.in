@@ -1,0 +1,14 @@
+createvfs test9 2000
+createvfs test9 500
+mountvfs test9
+makedir / home/sub/sub1/sub2/sub3/ 
+makedir / home/sub/sub1/sub2/sub3
+addfile /home/sub/sub1/ exam.txt /usr/include/stdio.h
+addfile /home/sub/sub1/ exam.txt /usr/include/syscall.h
+addfile /home/sub/sub1/sub2/ exam1.txt /usr/include/syscall.h
+removefile /home/sub/sub1/exam.txt
+removefile /home/sub/sub1/sub2/exam1.txt
+removefile /home/sub/sub1/exam.txt
+listdir /home/ 0 /tmp/output.txt
+unmountvfs 
+unmountvfs test9

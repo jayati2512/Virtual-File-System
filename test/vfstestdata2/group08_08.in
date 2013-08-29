@@ -1,0 +1,26 @@
+createvfs vfs08_8 1000
+makedir /home/usr/ usr1
+mountvfs vfs08_8
+addfile / demoadd.txt /usr/include/wait.h 
+makedir /home/usr/ usr1
+listfile /home/usr/demoadd.txt /temp/abc.txt 
+listfile /demoadd /temp/abc.txt 
+updatefile /demoadd.txt /usr/include/ustat1.h
+updatefile /demoadd.txt /usr/include/syslog.h
+copyfile /home /home/usr/dadd.txt
+updatefile /demoadd.txt /usr/include/ustat.h
+copyfile /demoadd.txt /home/usr/dadd.txt
+createvfs err 1000
+mountvfs err
+unmount vfs08_8
+mountvfs err
+makedir /home/usr/dev/abc/def/ghi/jkl/mno/pqr/uvw/xyz usr1
+addfile /home/ demoadd.txt /usr/include/wait.h 
+addfile /home/ demoadd.txt /usr/include/wait.h 
+movefile /demoadd.txt /home/demoadd.txt
+movefile /home/demoadd.txt /hme/usr/abcd.txt
+removefile /home/demoadd.txt
+movefile /demoadd.txt /home/abcd.txt
+makedir /home2/usr2
+movdir /home2/usr2 /home/usr/dev/
+movdir /home/ /home/usr/

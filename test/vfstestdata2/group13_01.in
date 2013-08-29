@@ -1,0 +1,19 @@
+createvfs DB 1024
+mountvfs DB
+makedir /shapes
+makedir /employee
+makedir /shapes circle
+makedir /shapes rectangle
+makedir /shapes/rectangle area
+makedir /shapes rectangle perimeter
+makedir /employee technician
+makedir /employee/technician fresh
+makedir /employee engineer
+makedir /shapes/circle circumfrence
+addfile /shapes read.txt /user/include
+listdir /home 1 /tmp
+updatefile /shapes/abc.txt update.txt 
+movefile /shapes/read.txt /shapes/rectangle/area
+deletedir /employee/engineer
+copyfile /shapes/rectangle/read.txt /employee/engineer
+exportfile /shapes/rectangle/read.txt /user/include

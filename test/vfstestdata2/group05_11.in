@@ -1,0 +1,15 @@
+createvfs new 
+createvfs / 100
+createvfs new 100000000
+createvfs $%%&^.sad 100
+createvfs hello 1023
+mountvfs
+mountvfs helloO
+deletedir /another/abc
+listdir /another 1 /tmp/gh///////
+addfile /another/abc one.txt /usr/include/wait.h
+searchfile xxx /tmp/searchout.txt
+updatefile /another/abc/one.txt /usr/include/wait.h
+deletedir /another/abc/ss
+removefile /abc/another/one.txt
+unmountvfs hello 

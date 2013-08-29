@@ -1,0 +1,21 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+movedir_FAILURE CANNOT_FIND_SPECIFIED_DESTINATIONDIR
+listdir_SUCCESS
+listdir_FAILURE CANNOT_FIND_SPECIFIED_PATH_OR_DIR
+searchfile_SUCCESS 7
+movedir_FAILURE CANNOT_MOVE_PARENT_TO_CHILD_DIR 

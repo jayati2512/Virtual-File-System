@@ -1,0 +1,28 @@
+createvfs thisisareallylongvfslabelshowerror 100
+createvfs demo1 100
+mountvfs demo1
+deletedir /home/dir1/
+makedir /home/ dir1
+makedr /home/ dir1 
+makedir /home/ dir1
+addfile /home/dir1/ test
+updatefile /home/dir1/test /usr/include/stab.h
+addfile /home/dir1/ newfile1.txt /usr/include/stab.h 
+makedir /home/ dir2
+makedir /home/ dir3
+makedir /home/dir1/ dir3
+makedir /home/dir1/dir5/dir6/dir7/ dir8
+makedir /home/dir2/ di/r
+listdir /home/dir2/ /tmp/listdir_dir2
+addfile /home/dir2/ newfile2.txt /usr/include/syscall.h
+addfile /home/dir3/ newfile3.txt /usr/include/syslog.h
+addfile /home/dir1/dir5/ newfile4.txt /usr/include/ustat.h
+movedir /home/dir3/ /home/dir2/
+listdir /home/dir2/ 0 /tmp/listdir_dir2
+movedir /home/ /home/dir1
+listdir /home/dir1/ 1 /tmp/listdir_dir3
+removefile /home/dir2/newfile
+removefile /home/dir3/newfile3
+addfile /home/dir2/ newfile2.txt /usr/include/stab.h
+listfile /home/dir1/newfile1 /tmp/listfile_newfile1
+unmountvfs demo1

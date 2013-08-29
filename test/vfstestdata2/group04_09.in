@@ -1,0 +1,25 @@
+createvfs demo 1024
+unmountvfs demo
+mountvfs demo
+makedir / download
+makedir / files
+makedir /download/ folder1
+makedir /download/folder1/ folders
+deletedir /download/files/
+deletedir /download/
+deletedir /folder/
+addfile /files/ file3.txt /usr/include/stdio.h
+removefile /download/ file3.txt
+mountvfs demo
+unmountvfs
+addfile /download/ file0.txt /usr/include/alloca.h
+mountvfs demo
+movedir /files/ /download/
+listdir /download/ 0 /usr/inlude/list.txt
+addfile /download/ file2.txt /usr/include/byteswap.h
+updatefile /download/file2.txt /usr/include/list2.txt
+movefile /download/file2.txt /files/file3.txt
+exportfile /download/ /user/include/c.txt
+searchfile file0 output.txt
+unmountvfs test
+unmountvfs demo

@@ -1,0 +1,20 @@
+createvfs database 1024
+mountvfs database
+mountvfs database
+makedir /westernclothes
+makedir /westernclothes jeans
+makedir /westernclothes shirts
+makedir /westernclothes t-shirt
+makedir /indianclothes
+makedir /indianclothes saree
+makedir /indianclothes suits
+makedir /indianclothes lehngas
+movedir /indianclothes/lehngas /westernclothes
+deletedir /westernclothes
+addfile /indianclothes/saree red.txt /user/include
+addfile /indianclothes/suits blue.txt /user/include
+listdir /westernclothes 1 
+updatefile /indianclothes/saree/red.txt /user/include
+movefile /indianclothes/suits blue.txt /westernclothes/jeans
+unmountvfs database
+searchfile blu /tmp

@@ -1,0 +1,29 @@
+createvfs demo 1024
+mountvfs demo
+makedir / dir1
+makedir /dir1 dir2
+makedir / dir2
+makedir / dir2
+makedir /dir2 dir3
+makedir /dir2/dir3 dir2
+makedir /dir2/dir3 dir4
+makedir /dir2/dir3 dir5
+makedir /dir2/dir3/dir5 dir6
+makedir /dir2/dir3/dir5 dir7
+makedir /dir2/dir3/dir5 dir8
+makedir /dir2/dir3/dir5 dir9
+movedir /dir2/dir3/dir5 /
+movedir /dir2/dir3/dir5 /dir2
+movedir /dir2/dir3/dir2 /
+deletedir /dir5/dir9
+deletedir /dsjdhhsd/shjdhs
+listdir /
+listdir /dir2
+addfile /dir2 myinput.txt /usr/include/input1.txt
+addfile /dir1/dir2 myip.txt /usr/include/input1.txt
+addfile / myinput.txt /usr/include/input1.txt
+updatefile /dir1/myinput.txt /usr/include/input1.txt
+removefile /abcd.txt
+copyfile /dir1/myinput.txt /dir1/dir2/myip.txt
+copyfile /abc/def/myinput.txt /dir1/dir2/myip.txt
+searchfile di /usr/include/out.txt

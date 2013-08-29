@@ -1,0 +1,14 @@
+createvfs vfs_01 1024
+createvfs vfs_02_new_create_vfs_dummy_test_vfs 1024
+createvfs vfs_02
+mountvfs vfs_01
+mountvfs vfs_01
+makedir /usr/include/test/ usr
+makedir /usr/include/test/ usr
+addfile /usr/include/ stdio.h /usr/include/poll.h
+addfile /usr/include/ stdio./h /usr/include/poll.h
+addfile /usr/ semaphore.h /usr/include/semaphore.h
+updatefile /usr/include/stdio.h /usr/include/stdio.h
+updatefile /usr/include/stdio.h /usr/include/semaphore.h
+listfile /usr/include/stdio.h
+listfile /usr/include/stdio.h /tmp/stdio.h

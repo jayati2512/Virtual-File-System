@@ -1,0 +1,11 @@
+createvfs third 100
+mountvfs third
+makedir /ROOT thnc
+makedir /ROOT thnc
+makedir /ROOT/thnc chem
+listdir /ROOT thmm 0 /tmp/rec.h
+addfile /ROOT/secdm nha.txt /usr/include/argz.h
+deletedir /ROOT secdm
+movedir /ROOT thnc /ROOT/thnc chem
+listdir /ROOT thdm 0 /ROOT/secdm/neha.txt
+unmountvfs third

@@ -1,0 +1,22 @@
+createvfs vfs29_9 1000
+mountvfs vfs29_9
+makedir /college
+makedir /college/ director
+makedir /college/ headofdept
+makedir /college/ teacher
+makedir /college/teacher/ student
+deletedir /college/headofdept/       
+listdir /college/ 0 fees
+listdir /college/worker/ 0 present 
+listdir /college/headofdept/ 3 age   
+addfile /college/ lab exam.txt
+searchfile exam.txt exam1.txt
+addfile /college/director income fees.txt
+removefile /college/director/   
+unmountvfs vfs29_9
+makedir /college/ director     
+makedir /college/ tailer 
+mount vfs29_9    
+listdir /college/ 0 salary                   
+listdir /college/headofdept/ 0 age           
+movefile /college/student/ /college/director/  

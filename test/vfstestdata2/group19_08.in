@@ -1,0 +1,32 @@
+createvfs vfs123456789qwertyui123456789qwer 123
+createvfs vfsdemo 123
+mountvfs vfsdem2
+mountvfs vfsdemo
+mountvfs vfsdemo
+exportfile
+exportfile /file1 
+makedir / dir1
+addfile
+addfile /dir1 
+addfile /dir1 stdio.h /user/include/stdio.h
+exportfile /dir1/stdio.h /tmp/sample.h
+exportfile /dir1 /tmp/sample.h
+exportfile 
+movedir /dir1 /dir2
+movedir
+movedir /dir1
+makedir / dir2
+makedir / dir3
+movedir /dir1 /dir2
+movedir /dir1/stdio.h /dir2
+addfile /dir2 conio.h /user/include/conio.h
+movedir /dir3 /dir2/conio.h
+movedir /dir3 /dir2/dir1
+addfile / file.c /user/include/file.c
+searchfile 
+searchfile file 
+searchfile file.c /tmp/sample.txt
+removefile /file.c
+searchfile file.c /tmp/sample.txt
+unmountvfs
+unmountvfs vfsdemo

@@ -1,0 +1,14 @@
+createvfs vfs7 1024
+addfile /abc/another/ one.txt /usr/include/filedesc.h
+unmountvfs vfs7
+mountvfs vfs7
+unmountvfs vfs2
+updatefile /another/abc/one.txt /usr/include/filedesc.h 
+addfile /abc/another/ one.txt /usr/include/filedesc.h
+updatefile /another/abc/one.txt /usr/include/filedesc.h 
+copyfile /usr/include/filedesc.h
+addfile /abc/another/ one.txt /usr/include/filedesc.h
+addfile /abc/another/ two.txt /usr/include/filedesc.h
+movefile /usr/include/filedesc.h /ttt
+unmountvfs vfs1 vfs2
+unmountvfs vfs7

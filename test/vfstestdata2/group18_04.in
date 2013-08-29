@@ -1,0 +1,25 @@
+createvfs f/s4 1000
+createvfs fs4 10
+mountvfs fs4
+addfile / file1.txt /usr/include/stab.h
+removefile /file1.txt
+mountvfs fs4
+makedir /dir1/dir2 dir3
+addfile / file1.txt /usr/include/stab.h
+addfile / file2.txt /usr/include/stab.h
+makedir / dir1
+movedir /dir1 /dir1/dir2
+addfile /dir1/ file1.txt /usr/include/stab.h
+copyfile /file1.txt /dir1/f1.txt
+copyfile /file2.txt /dir1/f2.txt
+copyfile /dir1/f2.txt /dir1/dir2/f2.txt
+listdir / 1 /tmp/out.txt
+exportfile /dir1/f1.txt /home/diskFile.txt
+listdir /dir1 0 out.txt
+removefile /dir1/f2.txt
+addfile /dir1/ f1.txt /usr/include/stab.h
+listfile /dir1/file1.txt
+makedir /dir1/ dir2
+movefile /dir1/file1.txt /dir1/dir2/f2.txt
+unmountvfs fs4
+listdir / 1 out.txt

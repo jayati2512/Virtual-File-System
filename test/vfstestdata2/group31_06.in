@@ -1,0 +1,18 @@
+createvfs 1024
+createvfs demo 1024
+mountvfs
+unmountvfs demo
+mountvfs demo
+makedir / home
+makedir /
+addfile /home strings.h /usr/include/strings.h
+addfile /home stdio.h /usr/include/stdio.h
+makedir /home dira
+listdir / 1 /tmp/script7output1
+copyfile /home/strings.h /home/dira
+listdir /home 1 /tmp/script7output2
+makedir /home dirb
+movefile /home/dira/strings.h /home/dirb
+listdir /home 1 /tmp/script7output3
+unmountvfs
+unmountvfs demo

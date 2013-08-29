@@ -1,0 +1,15 @@
+VFS_NOT_MOUNTED
+createvfs_SUCCESS
+mountvfs_SUCCESS
+CANNOT_FIND_SPECIFIED_PATH_OR_DIR
+DATA_FILE_ALREADY_EXISTS
+makedir_SUCCESS
+addfile_SUCCESS
+NOT_A_TEXT_FILE
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+copyfile_SUCCESS
+searchfile_SUCCESS
+searchfile_SUCCESS
+unmountvfs_SUCCESS

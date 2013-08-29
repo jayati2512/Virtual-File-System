@@ -1,0 +1,20 @@
+createvfs vfs_group06 1024
+mountvfs vfs_group06
+unmountvfs vfs_group06
+mountvfs vfs_group06
+makedir /sub1/dir1 dir2
+makedir / sub2
+makedir / sub3
+addfile /sub3 addfile3.txt /usr/include/poll.h
+addfile /sub3 addfile2.txt /usr/include/poll.h
+addfile /sub4 addfile4.txt /usr/include/poll.h
+removefile /sub1/sub3/addfile2.txt
+addfile /sub1/sub3 addfile4.txt /usr/include/poll.h
+movedir /sub2 /sub1/sub3
+searchfile addfile.txt /tmp/demo.txt
+removefile /sub2/sub3/addfile2.txt
+addfile /sub1/sub3 addfile4.txt /usr/include/poll.h
+movedir /sub2 /sub1/sub3
+searchfile add /tmp/demo.txt
+listdir / 1 /tmp/listdir.txt
+unmountvfs vfs_group06

@@ -1,0 +1,21 @@
+deletedir /file2
+createvfs testfile1 1024 
+mountvfs testfile1
+makedir / file1
+makedir /file1 bile1
+makedir /file1/bile1 cile1
+makedir /file1/bile1/cile1 dile1
+makedir /file1 bile2
+makedir / file2
+makedir /file1/bile1 cile2
+makedir /file1/bile1/cile1 dile2
+movedir /file1 /file2
+listdir /file1 1 abc.txt
+deletedir 
+listdir /file2 1 abc.txt
+makedir /file1
+movedir /file1 /file2
+deletedir /file2
+movedir /file2 /file2/file1/bile1
+deletedir /file2/file1/bile3
+deletedir /file1

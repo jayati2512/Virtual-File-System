@@ -1,0 +1,19 @@
+createvfs vfs_group06 1024
+mountvfs vfs_group06
+unmountvfs vfs_group06
+makedir /sub1/forfun/hello hi
+makedir / sub2
+makedir / sub3
+makedir / sub4
+makedir /sub3 sub5
+makedir /sub1/forfun check
+makedir /sub1 forfun
+addfile /sub3 addfile3.txt /usr/include/addfile3.txt
+addfile /sub3 addfile2.txt /usr/include/addfile2.txt
+addfile /sub3 addfile.txt /usr/include/addfile.txt
+addfile /sub4 addfile2.txt /usr/include/addfile2.txt
+addfile /sub3/sub5 addfile.txt /usr/include/addfile.txt
+addfile /sub1/forfun addfile.txt /usr/include/addfile.txt
+addfile /sub1/forfun/check addfile.txt /usr/include/addfile.txt
+movedir /sub1 /sub3
+listdir / 1 /usr/include/listdir

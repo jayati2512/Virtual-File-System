@@ -1,0 +1,25 @@
+createvfs demo7 
+createvfs demo7 20480
+mountvfs demo8
+addfile / a /user/include/input.txt
+listdir /a 1 /tmp/b
+mountvfs demo7
+listdir /a /tmp/b
+listdir /a 3 /tmp/b
+listdir /e 1 /tmp/b
+makedir / c/d
+listdir /c 0 /tmp/b
+addfile /c file1 /user/include/input.txt
+makedir / e
+makedir /c
+movedir /c
+movedir /f /c
+movedir /c /f
+movedir /a /c
+movedir /c /d
+movedir /c /a
+movedir /c /e
+movedir /c /e
+listdir /c 0 /tmp/g
+listdir /e 0 /tmp/h
+unmountvfs demo7

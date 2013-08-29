@@ -1,0 +1,14 @@
+createvfs LastVfs 123
+mountvfs LastVfs
+makedir / home
+makedir /test usr
+listdir /home 1 temp/listoutput.txt
+unmountvfs LastVfs
+addfile /home/test/usr datafile.txt /usr/include/syscall.h
+listdir /home/test/usr/test /temp/datafile.txt
+deletedir /home/test/usr
+listdir  /home/test/usr/test /temp/datafile.txt
+mountvfs LastVfs test
+mountvfs 
+unmount 
+unmount LastVfs

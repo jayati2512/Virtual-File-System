@@ -1,0 +1,21 @@
+createvfs 1234567890abcdefghijklmnopqrstuvwxyz 50
+createvfs fs3 50
+mountvfs fs3
+addfile / file1.txt /usr/include/stab.h
+addfile / file2/ff.txt /usr/include/stab.h
+addfile / file2.txt /usr/include/stab.h
+makedir / dir1
+makedir /dir1/dir2/ dir3
+makedir /dir1/dir2 /
+makedir /dir1/ dir2
+copyfile /dir1/file1.txt /dir1/f1.txt
+listdir / 1 /tmp/out.txt
+deletedir /dir1/dir2/dir3
+deletedir /dir1
+makedir / dir2
+addfile / file3.txt /usr/include/stab.h
+listdir / 1 out.txt
+movefile /file1.txt /dir1/dir2/dir3
+updatefile /file1.txt /usr/include/stab.h
+listdir /dir1/dir2 0 out.txt
+unmountvfs fs3

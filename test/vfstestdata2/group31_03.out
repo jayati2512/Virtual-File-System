@@ -1,0 +1,17 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+listdir_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+listdir_SUCCESS
+VFS_ALREADY_MOUNTED
+addfile_SUCCESS
+unmountvfs_FAILURE VFS_INSUFFICIENT_ARGUMENTS
+unmountvfs_SUCCESS
+deletedir_FAILURE VFS_NOT_MOUNTED
+mountvfs_SUCCESS
+deletedir_FAILURE DIRECTORY_IS_NOT_EMPTY
+unmountvfs_SUCCESS

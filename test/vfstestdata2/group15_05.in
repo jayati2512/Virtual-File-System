@@ -1,0 +1,24 @@
+createvfs myvfs 3000
+createvfs myvfsssssssssssssssssssssssssssssss 1000
+createvfs vfs 
+createvfs myvfs 1000
+mountvfs myvfs
+createvfs myvfs 1234e
+createvfs v/fs 1000
+createvfs re/tyh 900
+makedir /fld_one/itsPony p1
+makedir /fld_one p2
+makedir /fld_one 
+movedir /src /fld_one
+movedir /fld_one /src
+makedir / d1
+makedir /d1 d2
+makedir /d2/d3 d4
+makedir /d2 d4
+addfile /d1 f1.txt /usr/include/stdio.h
+addfile /d2 f2.txt /usr/include/stdio.h
+addfile /d3 f3.txt /usr/include/stdlib.h
+addfile /d4 /f3.txt /usr/include/stdio.h
+addfile /d5 f4.png /usr/include/img.png
+addfile /d6 f4 /usr/include/conio.h
+listfile /d6/f4 /tmp/list4

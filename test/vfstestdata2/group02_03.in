@@ -1,0 +1,25 @@
+createvfs flower 10
+mountvfs flower
+createvfs flower 20
+makedir /flower red
+makedir /flower //blue
+makedir /flower blue
+makedir /flower green
+addfile /flower/red rose.txt /usr/include/poll.h
+addfile /flower/blue jasmine.txt /usr/include/wait.h
+addfile /flower/green lilly.txt /usr/include/alloca.h
+unmountvfs
+unmountvfs flower
+mountvfs ffffflower
+mountvfs flower
+mountvfs flower
+listdir red
+listdir /flower/red 1 /tmp/user.txt
+makedir /flower/ white
+movefile /flower/blue/jasmine.txt /flower/white
+movefile /flower/green/lilly.txt /flower/white
+listdir /flower/red 1 /tmp/user.txt
+listdir /flower/green 1 /tmp/user.txt
+listdir /flower/blue 1 /tmp/user.txt
+listdir /flower/white 1 /tmp/user.txt
+unmountvfs flower

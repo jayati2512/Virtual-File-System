@@ -1,0 +1,22 @@
+createvfs vfs 1111
+createvfs vfs_3 1024
+unmountvfs vfs_3
+addfile /home/a/ test.txt /user/include/stdio.h
+mountvfs vfs_3
+mountvfs vfs_3
+makedir /home/ a
+makedir /home/user/ abc
+makedir /home/ b/a
+makedir /user/ a
+makedir /home/user/ abc
+addfile /home/a/ test.txt /usr/include/stdio.h
+addfile /home/ test1.txt /usr/include/lastlog.h
+addfile /home/a/ test2.txt /user/include/stab.h
+movedir /home/a/ /home/abc.txt
+deletedir /home/user/abc/
+deletedir /home/user/abc/
+listdir /home/ 0 /tmp/out1.txt
+updatefile /home/test1.txt /usr/include/stab.h
+searchfile te /tmp/abc.txt
+exportfile / /tmp/eout1.txt
+unmountvfs vfs_3

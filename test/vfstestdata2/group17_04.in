@@ -1,0 +1,20 @@
+createvfs
+createvfs v 2
+createvfs v1 5
+mountvfs v
+mounvfs v1
+createvfs data 123456
+makedir
+unmountvfs v1
+makedir /folder1
+makedir /folder1/folder2
+deletedir /folder1
+deletedir /folder2
+addfile /folder1/pqr.txt /usr/anyfile.doc
+copyfile /folder/folder1/folder4/abc.txt /folder/folder1
+addfile /folder1 abc.txt /usr/include/xyz.doc
+addfile /folder1/folder2 ttr.txt /usr/include/aas.txt
+deletefile /folder1/pqr.txt
+movefile /folder abc.txt /folder1/folder2
+unmountvfs
+unmountvfs v

@@ -1,0 +1,30 @@
+createvfs demo 23
+addfile /home test /usr/include/wait.h
+mountvfs de
+mountvfs demo
+unmountvfs demo
+mountvfs demo
+makedir /home/vfsfile/src/ bst
+deletedir
+movedir /home/vfsfile /home
+addfile /home test2.txt /usr/include/stdio.h 
+copyfile /home/abc/dfg /home/test.txt
+deletedir /home
+listdir /home 5 /tmp/outp.txt
+addfile /home test.txt /usr/include/wait.h
+removefile /home/sdf/ghd
+updatefile /home/test /usr/include/stdio.h
+updatefile /home/test2 /usr/include/wait.h
+unmountvfs demo
+searchfile test
+mountvfs demo
+makedir /algo/data/ splaytree
+movedir /algo/data /java
+deletedir /algo/data/splaytree
+listdir /algo/data 0 /tmp/out.txt
+createvfs demo 12
+mountvfs demo2
+unmountvfs demo2
+exportfile /home /tmp/asd
+exportfile 
+unmountvfs demo

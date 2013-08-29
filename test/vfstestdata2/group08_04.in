@@ -1,0 +1,12 @@
+createvfs '.@' 12..5
+mountvfs '.@'
+unmountvfs '.@'+'
+createvfs '.@' 125
+mountvfs '.@'
+deletedir /
+makedir / '/'
+makedir /'/' home
+addfile /'/'/home newtext.txt /usr/addfile.txt
+listdir / 1 /temp/listdiroutput.txt
+unmountvfs '.@'
+removefile /'/'/home/newtext.txt.txt

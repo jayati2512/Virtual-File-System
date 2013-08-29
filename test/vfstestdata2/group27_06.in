@@ -1,0 +1,33 @@
+createvfs demo 20
+mountvfs demo 
+makedir / abc
+makedir / bcd
+unmountvfs demo
+mountvfs demo
+makedir /abc/ bcd
+unmountvfs demo
+mountvfs demo
+deletedir /bcd/abc/
+deletedir /bcd
+unmountvfs demo
+mountvfs demo
+makedir /r/r/ /t
+makedir /r/r/ t
+movedir /r/r/t/ /
+makedir / abcd
+unmountvfs demo
+mountvfs demo
+addfile / abc.txt /usr/include/aio.h
+unmountvfs demo
+mountvfs demo
+addfile / abcd.txt /usr/include/ar.h
+addfile /abcd/ abc.o /usr/bin/aconnect.o
+addfile /abcd/ abc1.o /usr/bin/aplay.o
+exportfile /abcd/abc.o /tmp/abcdef.o
+exportfile /abcd/abc1.o /tmp/abcdef.txt
+listdir / 1 /tmp/output_listdir.txt
+copyfile /abc.txt /abc.txt
+copyfile /abc.txt /defg
+copyfile /abc.txt /abcd
+searchfile abc /tmp/1
+searchfile /r /tmp/2

@@ -1,0 +1,26 @@
+createvfs demo 1024
+mountvfs demo
+mountvfs demo
+makedir / home
+makedir /home/d1 d2
+makedir /home/d1/d2 d3
+makedir /home/d1/d2/d3 d4
+makedir /home/d1/d2/d3/d4 d5 
+makedir /home/d1 d2    
+deletedir /home/d1/d2
+makedir /home/d1/d2 
+addfile /home/d1/d2 file1.txt /usr/include/stab.h
+updatefile /home/file2.txt /usr/include/stab.h
+addfile /home/d1 file2.txt /usr/include/stab.h
+addfile /home/d1/d2/d3 file3.txt /usr/include/stab.h
+copyfile /home/file /home/d1/file1.txt  
+unmountvfs demo
+mountvfs demo
+mountvfs demo 
+listdir /home 1 /tmp/output_list_dir.txt
+removefile /home/example.txt 
+removefile /home/d1/d2/file1.txt
+removefile /home/d1/d2/d3/file3.txt
+movefile /home/d1/d2/d3/file3.txt /tmp/output.txt 
+unmountvfs demo
+unmountvfs demo 

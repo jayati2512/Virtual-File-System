@@ -1,0 +1,30 @@
+createvfs asdf 1024 
+mountvfs asdf 
+makedir / home1 
+makedir /home1 sub1 
+makedir / home2 
+makedir /home2 sub1 
+makedir /home2 sub2 
+makedir /home2 sub1 
+addfile /home1 test1.txt /usr/include/poll.h
+addfile /home1/sub1 test1.txt /usr/include/lastlog.h
+addfile /home2 test2.txt /usr/include/lastlog.h
+addfile /home2 test2.txt /usr/include/lastlog.h
+addfile /home2/sub1 test2.txt /usr/include/lastlog.h
+addfile /home2/sub2 test2.txt /usr/include/lastlog.h
+listdir /home2 0 /tmp/output1
+listfile /home1/test1.txt /tmp/output2
+listfile /home2/sub2/test2.txt /tmp/output3
+copyfile /home1/test1.txt /home2/sub2/test2.txt
+unmountvfs asdf
+createvfs qwer 1024
+movefile /home/test1.txt /home2/test.txt
+mountvfs qwer
+mountvfs asdf
+makedir / temp
+addfile /temp test.txt /usr/include/stab.h
+listfile /temp/test.txt /tmp/output4
+unmountvfs qwer
+mountvfs asdf
+listdir / 1 /tmp/output5
+unmountvfs asdf

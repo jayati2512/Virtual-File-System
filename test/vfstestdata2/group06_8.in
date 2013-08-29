@@ -1,0 +1,45 @@
+createvfs vfs_group06 0
+createvfs vfs_group06 1000
+mountvfs vfs_group06
+unmountvfs vfs_group06
+makedir /home s/ub1
+addfile /home/sub1 addfile2.txt /usr/include/poll.h
+listfile /home/sub1/addfile2.txt outfile1.txt
+mountvfs vfs_group06
+makedir /home topi/c1
+makedir /home topic1
+makedir /home/topic1 topic4
+makedir /home topic2
+makedir /home topic3
+listdir /home/topic1
+listdir /home/topic-1
+makedir /home topic-2
+makedir /home topic~2
+makedir /home/topic2 topic5
+listdir /home/
+listdir /
+listdir /home/topic1
+listdir /home/topic2
+addfile /home/topic1 addfile1.txt /usr/include/syscall.h
+listfile /home/topic1/addfile1.txt /tmp/outsyscall.txt
+addfile /home/topic2 addfile2.txt /usr/include/poll.h
+listfile /home/topic1/addfile2.txt /tmp/outfile2.txt
+removefile /home/topic1/addfile2.txt
+removefile /home/topic1/addfile3.txt
+addfile /home/topic2 addfile2.txt /usr/include/poll.h
+listfile /home/topic1/addfile2.txt /tmp/outpoll.txt
+addfile /home/topic2 addfile2.txt /usr/include/source2.txt
+addfile /home/sub3 addfile.txt /usr/include/addfile.txt
+movedir /home/topic2 /home/topic3
+listdir /home/topic2
+deletedir /home/topic2/topic3
+listdir /home/topic2/topic3
+searchfile /home/topic1 addfile1.txt out2.txt
+searchfile /home/topic1 addfile6.txt out2.txt
+copyfile /home/topic1/addfile1.txt /home/topic2/topic5
+listfile /home/topic2/topic5/addfile1.txt
+movefile /home/topic2/topic5/addfile1.txt /home/topic2/topic5
+makedir /home/topic2/ topic6
+movefile /home/topic2/topic5/addfile1.txt /home/topic2/topi6.txt
+listfile /home/topic2/topic5/addfile1.txt
+unmountvfs vfs_group06

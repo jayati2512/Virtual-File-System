@@ -1,0 +1,29 @@
+﻿createvfs vfs1 1024
+mountvfs vfs1
+unmountvfs vfs1
+mountvfs vfs1
+makedir /another/abc/ ss
+unmountvfs vfs1
+mountvfs vfs1
+deletedir /another/abc/ss
+unmountvfs vfs1
+mountvfs vfs1
+makedir /abc/another/ ss
+movedir /another/abc /as
+movedir /as/abc /another
+listdir /another/abc/ 0 /tmp/listdiroutputfile
+unmountvfs vfs1
+mountvfs vfs1
+addfile /abc/another/ one.txt /usr/include/filedesc.h
+unmountvfs vfs1
+mountvfs vfs1
+listfile /abc/another/one.txt /tmp/listfileoutput
+removefile /abc/another/one.txt
+unmountvfs vfs1
+mountvfs vfs1
+updatefile /another/abc/one.txt /usr/include/filedesc.h 
+movefile /another/abc/one.txt /another/check.txt
+copyfile /another/check.txt /another/abc/check.txt
+exportfile /another/check.txt /tmp/exportout.txt
+searchfile one /tmp/searchout.txt
+unmountvfs vfs1

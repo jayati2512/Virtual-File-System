@@ -1,0 +1,7 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+movedir_SUCCESS
+deletedir_SUCCESS
+unmountvfs_SUCCESS

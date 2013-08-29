@@ -1,0 +1,17 @@
+createvfs vfs12_05 10240
+createvfs vfs12_05 10240
+mountvfs vfs12_05
+makedir / a 
+makedir / a
+makedir /a/ s
+movedir /a/s/ /a/f/ 
+deletedir /a/
+listdir /a/f/ 0 listdiroutput
+addfile /a/s/ hello.txt /tmp/output.txt
+addfile /a/s/ hello.txt /tmp/output.txt
+listfile /a/f/hello.txt /tmp/listoutput.txt
+updatefile /a/f/hello.txt /tmp/update.txt
+removefile /a/f/hello.txt
+movefile /a/s/ /a/f/
+copyfile /a/ /a/s/
+exportfile /a/s/hello2.txt /tmp/export.txt

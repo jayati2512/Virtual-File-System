@@ -1,0 +1,18 @@
+createvfs myvfs10 1025
+createvfs myvfs10 1023
+mountvfs myvfs10
+makedir /usr/ hello
+makedir /usr/ hi
+makedir /usr/hello/ hi
+makedir /usr/hello/hi/ vf
+makedir /usr/hello/hi/ hjk
+addfile /usr/hello/ a.txt /usr/include/poll.h
+addfile /usr/hello/ a.txt /usr/include/endian.h
+updatefile /usr/hello/ /usr/include/poll.h
+updatefile /usr/hello/a.txt /usr/include/poll.h
+movedir /usr/hello/ /usr/hello/hi/
+movedir /usr/hello/hi/ /usr/hello/
+listdir /usr 1 /tmp/out.txt
+copyfile 
+searchfile a /tmp/out1.txt
+unmountvfs myvfs10

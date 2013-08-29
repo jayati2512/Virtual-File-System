@@ -1,0 +1,33 @@
+createvfs new 1000
+mountvfs un
+unmountvfs un
+mountvfs new
+createvfs new2
+mountvfs new2
+unmountvfs new3
+mountvfs 
+makedir /home
+makedir /home/a/b c
+makedir /home/a b1
+makedir /home/a b1
+makedir /home/a
+makedir /home/a1 d
+makedir /another/an1 an2
+makedir /another/an1 an3
+makedir /add/add2 add3
+unmountvfs new2
+unmountvfs new 
+deletedir /homeount
+mountvfs new
+deletedir /home/a
+deletedir /home/a/b1
+deletedir
+deletedir /home/and/and2
+unmountvfs new
+listdir /home 0 /temp/out.txt
+mountvfs new
+listdir /home 0 /temp/out.txt
+listdir /home 1 /temp/out.txt
+listdir /abc/z 0 /temp/out.txt
+listdir /home 3 /temp/out.txt
+listdir 

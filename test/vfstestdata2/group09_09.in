@@ -1,0 +1,20 @@
+mountvfs OFFICE
+makedir / employee
+makedir /employee scientists
+makedir /employee officers
+makedir /employee pilots
+makedir /employee/scientists junior
+makedir /employee/officers asst
+deletedir /employee/officers        
+listdir /employee 0 output
+listdir /employee/manager 0 output_emp 
+listdir /employee/officer ab age   
+addfile /employee/  CCR.txt  /usr/include/employeerecords.txt
+searchfile employeerecords.txt 
+addfile /employee/officer/ salarycount salary.txt  /usr/include/file1.txt
+removefile /employee/officer    
+unmountvfs OFFICE
+makedir /employee officer      
+makedir /employee interns      
+listdir /employee 0 output_k                    
+listdir /employee/secretary/ 0  output_h            

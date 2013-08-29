@@ -1,0 +1,21 @@
+createvfs bookstore 
+createvfs bookstore 1000
+mountvfs bookstore
+makedir / ROOT
+listdir /ROOT dp3.TXT
+makedir /ROOT SRC
+addfile /ROOT MY_DP3.TXT /usr/include/stab.h
+updatefile /ROOT/MY_DP3.TXT /usr/include/syslog.h
+makedir /ROOT/XYZ SRC/ABC
+searchfile ABC.TXT
+exportfile /Desktop/Downloads/Mydata.JPEG /ROOT/SRC
+exportfile /Desktop/Downloads
+listfile /ROOT/MY_DP3.TXT 
+deletedir XYZ
+listfile /XYZ /ROOT/ABC.TXT
+makedir / src/com/data
+makedir /src /edu/iiitb/bookstore/action
+makedir /src/edu/iiitb/bookstore/ models
+addfile /ROOT addBooks.txt /usr/include/stab.h
+addfile addBooks.txt
+unmountvfs bookstore

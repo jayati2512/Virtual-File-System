@@ -1,0 +1,20 @@
+createvfs vfs/32 1024
+mountvfs vfs32
+unmountvfs vfs32
+addfile /home abc.txt /usr/include/stdio.h
+makedir /home/usr/ newdir
+createvfs vfs32 1024
+mountvfs vfs31
+unmountvfs vfs32
+mountvfs vfs32
+unmountvfs vfs32
+mountvfs vfs32
+addfile /home abc.txt /usr/include/stdio.h
+makedir /home/usr/ newdir1
+deletedir /home/usr/newdir2
+deletedir /home/usr/newdir1
+updatefile /home/abc.txt /usr/include/poll.h
+removefile /home/abc.txt
+updatefile /home/abc.txt /usr/include/poll.h
+copyfile /usr/include/wait.h /home/
+searchfile a.txt

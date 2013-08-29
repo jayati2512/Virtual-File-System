@@ -1,0 +1,29 @@
+﻿createvfs_SUCCESS
+mountvfs_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+deletedir_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+movedir_FAILURE CANNOT_FIND_SPECIFIED_DESTINATIONDIR
+movedir_FAILURE CANNOT_FIND_SPECIFIED_SOURCEDIR
+listdir_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+addfile_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+listfile_SUCCESS
+removefile_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+updatefile_SUCCESS
+movefile_SUCCESS
+copyfile_SUCCESS
+exportfile_SUCCESS
+searchfile_SUCCESS
+unmountvfs_SUCCESS

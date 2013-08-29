@@ -1,0 +1,15 @@
+createvfs 
+mountvfs 
+unmountvfs 
+mountvfs 
+makedir sub2
+listdir /home listdiroutput
+unmountvfs 
+mountvfs 
+listdir /home 0 
+searchfile addfile.txt 
+deletedir
+movedir
+exportfile /home/sub3/addfile4.txt
+copyfile /home/sub3/addfile4.txt
+searchfile addfile.txt /tmp/search1.txt

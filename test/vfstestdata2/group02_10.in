@@ -1,0 +1,13 @@
+createvfs shapes 200
+mountvfs shapes
+makedir /shapes circle
+makedir /shapes square
+makedir /shapes
+makedir /shapes triangle
+addfile /shapes/circle c.txt /usr/include/syscall.h
+addfile /shapes/circle c.txt /usr/include/syslog.h
+addfile /shapes/square s.txt /usr/include/ustat.h
+listfile /shapes/circle/c.txt /tmp/c.txt
+listfile /shapes/square/s.jpg /tmp/s.jpg
+listdir /shapes/circle 3 /tmp/user.txt
+unmountvfs shapes

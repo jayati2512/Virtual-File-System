@@ -1,0 +1,14 @@
+createvfs demo2 1000
+mountvfs demo2
+makedir / home
+makedir /home sub1
+makedir /home/sub1 sub2
+listdir /home 0 /tmp/listdir.txt
+addfile /home/sub1/ file1.txt /user/include/stdio.h
+addfile /home/sub1/ file2.txt /usr/include/stdio.h
+updatefile /home/sub1/file2.txt 
+unmountvfs demo2
+mountvfs demo2
+addfile /home/sub1/ file3.txt /usr/include/stdio.h
+listfile /home/sub1/sub2/file1.txt
+unmountvfs demo2

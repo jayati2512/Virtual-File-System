@@ -1,0 +1,14 @@
+createvfs iiitb1 1024
+mountvfs iiitb1
+makedir /a/b/c/d/e/  f
+addfile / iiitb.txt  /tmp/addfile.txt
+listfile /iiitb.txt /tmp/listfile.txt
+updatefile /a/b/c/d/file.txt /tmp/listfile.txt
+removefile /a/b/c/d/file.txt
+addfile /a/b/ file.txt /usr/include/ustat.h
+movefile /a/b/file.txt /a/file.txt
+copyfile /a/file.txt /a/b/c/d/
+exportfile /a/b/c/d/file.txt /tmp/exportfile.txt 
+searchfile file.txt /tmp/search.txt
+unmountvfs vfs
+unmountvfs iiitb1 

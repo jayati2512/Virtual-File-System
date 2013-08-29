@@ -1,0 +1,18 @@
+createvfs vfs10 10000
+createvfs vfs11 10000
+mountvfs vfs10
+mountvfs vfs11
+makedir /dir1/dir2/dir3/dir4 dir5
+addfile /dir1/ file1.txt /usr/include/syscall.h
+addfile /dir1/ file1.txt /usr/include/syslog.h
+removefile /dir1/hello.txt
+movefile /dir1/file1.txt /dir1/dir2/dir3
+movedir /dir1/dir2/dir3/dir4 /dir1/dir2/dir3/file1.txt
+exportfile /dir1/dir2/dir3/file1.txt /tmp/file2.txt
+copyfile /dir1/dir2/dir3/file1.txt /dir1/file.txt
+searchfile file /tmp/searchfile.txt
+removefile /dir1/dir2/dir3/file1.txt
+deletedir /dir1/dir2
+listdir /dir5
+listdir /dir1 1 /tmp/listdir.txt
+unmountvfs vfs10

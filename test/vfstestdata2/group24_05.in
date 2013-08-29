@@ -1,0 +1,9 @@
+createvfs de/mo 1024 
+createvfs demo -23
+createvfs demo 1024
+mount demo
+mount demo
+makedir / /abc
+makedir /abc abb
+deletedir /abc/abb/bot
+unmount demo 

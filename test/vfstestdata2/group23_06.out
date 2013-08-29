@@ -1,0 +1,20 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+searchfile_SUCCESS 0 
+addfile_SUCCESS
+addfile_SUCCESS
+listfile_FAILURE NOT_A_TEXT_FILE 
+exportfile_FAILURE VFS_INSUFFICIENT_ARGUMENTS 
+exportfile_FAILURE CANNOT_EXPORT_DIR 
+listfile_SUCCESS
+exportfile_FAILURE CANNOT_FIND_SOURCEFILE 
+addfile_SUCCESS
+exportfile_SUCCESS
+unmount_SUCCESS
+addfile_FAILURE VFS_NOT_MOUNTED 
+exportfile_FAILURE VFS_NOT_MOUNTED 

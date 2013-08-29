@@ -1,0 +1,9 @@
+createvfs root/vfs 1000
+createvfs vfs 2000
+createvfs vfs 1000
+mountvfs vfs1
+mountvfs vfs
+listdir / 1  /tmp/out.txt
+addfile stdio.h /user/include/stduio.h
+listfile input.txt /tmp/
+unmountvfs

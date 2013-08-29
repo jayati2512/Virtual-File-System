@@ -1,0 +1,10 @@
+createvfs vfs_01 1024
+mountvfs vfs_01
+addfile /temp/ demo.txt /usr/include/poll.h
+listfile
+listfile /temp/demo.txt
+listfile /temp/demo.txt /tmp/demo.txt
+listfile /temp/demo2.txt /tmp/demo2.txt
+listfile /temp/demo.txt /xyz/demo.txt
+unmountvfs vfs_01
+addfile /temp/ clear /usr/bin/clear

@@ -1,0 +1,17 @@
+createvfs test1 1020
+mountvfs test1
+unmountvfs test1
+mountvfs test1
+makedir / home/sub1/sub2/sub3
+listdir /home 0 /tmp/listdiroutput.txt
+unmountvfs test1
+mountvfs test1
+listdir /home 0 /tmp/listdiroutput.txt
+mountvfs test1
+addfile /home/sub1/sub2/ exam.txt /use/include/syscall.h
+unmountvfs
+unmountvfs test1
+deletedir /home/sub1
+mountvfs test1
+deletedir /home/sub1
+unmountvfs test1

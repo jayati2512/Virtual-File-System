@@ -1,0 +1,10 @@
+createvfs demo_28 1024
+createvfs demo_28 1024
+mountvfs demo_28
+makedir / dir1
+makedir / dir2
+makedir /dir1 dir3
+deletedir /dir4
+deletedir 
+addfile /dir1/dir3 myfile /usr/include/file1.txt
+addfile /dir1/dir3 myfile2 /usr/include//

@@ -1,0 +1,10 @@
+createvfs demo 1024
+mountvfs demo
+deletedir /usr/file1/
+makedir /tmp/ dir1
+addfile /tmp/file1/ file2.txt /usr/include/stdio.h
+addfile /tmp/ file2.txt /usr/include/stdio.h
+copyfile /usr/include/stdio.h /tmp/dir1/file3.txt
+removefile
+removefile /usr/file1.txt
+unmountvfs demo

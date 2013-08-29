@@ -1,0 +1,13 @@
+createvfs vfs_01 1024
+createvfs vfs_01 1024
+createvfs vfs_02 2000
+createvfs vfs_03 -1
+createvfs vfs/1 1024
+createvfs anbfghtchtendtjkijswotwejsqrtytoonfjgnghd 1024
+createvfs 10
+mountvfs vfs
+mountvfs
+mountvfs vfs_01
+unmountvfs
+unmountvfs vfs_01
+unmountvfs vfs_01

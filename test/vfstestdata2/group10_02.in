@@ -1,0 +1,9 @@
+createvfs demo1
+createvfs demo2 1024
+createvfs demo3 0
+mountvfs demo1
+mountvfs demo2
+mountvfs demo2
+unmountvfs demo3
+unmount
+unmount demo2

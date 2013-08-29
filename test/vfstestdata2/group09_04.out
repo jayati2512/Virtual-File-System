@@ -1,0 +1,20 @@
+createvfs_SUCCESS
+unmountvfs_FAILURE "ACCESS_DENIED"
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+unmountvfs_SUCCESS
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+movedir_FAILURE "VFS_INSUFFICIENT_ARGUMENTS"
+deletedir_FAILURE "CANNOT_FIND_SPECIFIED_PATH_OR_DIR"
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+unmountvfs_SUCCESS

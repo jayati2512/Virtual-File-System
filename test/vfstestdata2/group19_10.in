@@ -1,0 +1,17 @@
+create vfs_1 -453
+create vfs_1 1
+create vfs_1 1
+mountvfs vfs_1
+mountvfs vfs_1
+makedir /home dir1
+movedir /home /non_existent_directory 
+makedir /home /dir2/dir3
+deletedir /home/dir1/file1
+addfile /home/dir1/ file1.txt /usr/include/stdio.h
+addfile /home/dir2/ file1.txt /usr/include/stdio.h
+deletedir 7675
+deletedir /home/dir1
+deletedir dir3
+removefile /home/dir2/file2
+unmountvfs vfs_1
+unmountvfs vfs_1

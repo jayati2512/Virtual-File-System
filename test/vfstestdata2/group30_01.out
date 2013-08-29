@@ -1,0 +1,15 @@
+createvfs_SUCCESS
+unmountvfs_FAILED VFS_NOT_MOUNTED
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_FAILED DIRECTORY_ALREADY_EXISTS
+makedir_FAILED INVALID_PATH 
+listdir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+listdir_SUCCESS
+unmountvfs_SUCCESS
+makedir_FAILED VFS_NOT_MOUNTED

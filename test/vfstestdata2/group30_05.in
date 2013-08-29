@@ -1,0 +1,28 @@
+createvfs / 40
+createvfs demo 40
+unmountvfs demo
+mountvfs demo
+makedir /institute/college/iiit/imtech/comp.sci/python marks
+makedir /institute/college/iiit/imtech embedded_systems
+makedir /institute/college/iiit/imtech/comp.sci/python faculty
+makedir /institute/college/iiit/imtech/comp.sci c++
+makedir /institute/college/iiit/imtech/comp.sci/c++ inheritance
+listdir /institute 1 /tmp/listout5
+unmountvfs demo
+makedir /institute/college nit
+createvfs demo 40
+mountvfs demo
+movedir /institute/college/iiit/imtech /institute/college/iiit/imtech/comp.sci/python
+makedir /institute/college/iiit/imtech embedded_systems
+movedir /institute/college/iiit/imtech/embedded_systems /institute/college/iiit/imtech/comp.sci
+movedir /institute/school /institute/college/iiit/imtech/embedded_systems
+listdir /institute/school 0 /tmp/listout6
+movedir / /institute
+makedir /institute/school kg_school
+deletedir /institute/school/highschool
+listdir /institute 1 /tmp/listout7
+addfile /institute/college/iiit/imtech/comp.sci cse /usr/include/stdio.h
+movedir /institute/college/iiit/imtech/comp.sci/python/faculty /institute/college/iiit/imtech/comp.sci/cse
+addfile /institute/college/iiit/imtech/comp.sci/cse junkfile /usr/include/stdlib.h
+listdir /institute/college 1 /tmp/listout8
+unmountvfs demo

@@ -1,0 +1,18 @@
+createvfs colors 120
+mountvfs colors
+makedir /colors primary
+makedir /colors secondary
+addfile /colors/primary red.txt /usr/include/poll.h
+addfile /colors/primary green.txt /usr/include/syslog.h
+addfile /colors/primary yellow.txt /usr/include/syscall.h
+addfile /colors/secondary pink.txt /usr/include/termio.h
+addfile /colors/secondary grey.txt /usr/include/ustat.h
+addfile /colors/secondary orange.txt /usr/include/stab.h
+deletedir 
+deletedir /colors
+deletedir /colors/primary
+removefile /colors/primary/red.txt
+removefile /colors/primary/green.txt
+removefile /colors/primary/yellow.txt
+deletedir /colors/primary
+unmountvfs colors

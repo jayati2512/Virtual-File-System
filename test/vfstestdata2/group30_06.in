@@ -1,0 +1,8 @@
+createvfs vfs3 10
+mountvfs vfs3
+unmountvfs vfs3
+mountvfs vfs3
+makedir / vehicle
+makedir / vehicle
+makedir home
+unmountvfs vfs3

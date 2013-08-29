@@ -1,0 +1,26 @@
+createvfs vfs1 100
+mountvfs vfs1
+createvfs vfs2 200
+unmountvfs vfs1
+mountvfs vfs2
+unmountvfs vfs1
+unmountvfs vfs2
+mountvfs vfs1
+makedir /jim/friends/ rick
+makedir / rick
+searchfile ric /tmp/tmppEL2Rt
+deletedir /jim/
+deletedir /jim/friends/rick/
+searchfile rick /tmp/pulse-5j8vlM7MVoYe/pid
+addfile /jim/friends/ rickdetails.h /usr/include/wait.h
+addfile /rick/ rickdetails2.h /usr/include/syscall.h
+copyfile /jim/friends/rickdetails.h /rick/jim/rickdetails2.h
+copyfile /jim/friends/rickdetails.h /jim/friends/rick/rickdetails.h
+removefile /jim/friends/rickdetails.h
+movedir /jim/friends/
+unmountvfs vfs2
+unmountvfs vfs1
+mountvfs vfs1
+makedir / jim
+addfile /jim/ a.h /usr/include/syscall.h
+unmountvfs vfs1

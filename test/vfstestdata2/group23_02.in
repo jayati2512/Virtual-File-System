@@ -1,0 +1,19 @@
+createvfs demo 100
+mountvfs demo
+mountvfs demo
+makedir /home/
+makedir /home/ a1
+makedir /home/a1/ dir1
+unmountvfs demo
+makedir /home/a2/ dir2
+mountvfs demo
+makedir /home/a2/ dir2
+listdir /home/ 0 /home/user/Desktop/out.txt
+listdir /home/ 0 
+listdir /home/ 0 /home/user/out.txt
+unmountvfs demo
+listdir /home/ 0 /home/user/out.txt
+mountvfs demo
+makedir /home/a2/dir3 
+listdir /home/ 1 /home/user/out.txt
+unmountvfs demo

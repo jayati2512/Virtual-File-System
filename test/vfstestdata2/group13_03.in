@@ -1,0 +1,20 @@
+createvfs Data 1024
+unmountvfs Data
+mountvfs time
+mountvfs Data
+makedir /employee
+makedir /employee
+makedir /stu/dent
+makedir /student
+makedir /student graduate
+makedir /student under_grad
+makedir /employee faculty
+makedir /employee staff
+makedir /employee/faculty marks
+movedir /employee/faculty/marks /student/lecturar
+addfile /employee/faculty/marks datavfs.txt /user/include
+addfile /student/graduate rea/d.txt /user/include
+removefile /student/graduate/datavfs.txt
+searchfile datavfs.txt /tmp
+searchfile datavfs.txt
+listdir /employee/faculty/marks 0 datavfs.txt

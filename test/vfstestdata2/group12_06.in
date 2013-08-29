@@ -1,0 +1,10 @@
+createvfs DEMO 1024
+mountvfs DEMO
+makedir /home/ a
+addfile /home/a/ addout.txt
+addfile /home/a/ addout.txt /usr/include/syslog.h
+listfile /home/a/addout.txt /tmp/listout1.txt
+exportfile /home/a/addout.txt /tmp/expout.txt
+updatefile /home/a/addout.txt /usr/include/ustat.h
+unmountvfs
+unmountvfs DEMO

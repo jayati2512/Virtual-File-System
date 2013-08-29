@@ -1,0 +1,8 @@
+createvfs hour 1024   
+mountvfs hour
+createvfs min 102654
+makedir /a/b/c/d/e/  f
+makedir /a/b/c/d/e/f/g/g/  i
+deletedir /a/b/c/d/f/
+unmountvfs hour 
+unmountvfs min

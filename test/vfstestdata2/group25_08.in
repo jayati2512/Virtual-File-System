@@ -1,0 +1,14 @@
+mountvfs test
+unmountvfs test
+createvfs test
+createvfs test -100
+createvfs test 110
+unmountvfs test
+movedir
+searchfile abc /tmp/op1.txt
+mountvfs test
+makedir /f/g/h /t
+listdir / 1 /tmp/op2.txt
+deletedir /f/g
+listdir /f 0 /tmp/op3.txt
+unmountvfs test

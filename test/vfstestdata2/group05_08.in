@@ -1,0 +1,13 @@
+createvfs vfs1 210
+mountvfs vfs1
+unmountvfs vfs1
+mountvfs vfs1
+makedir /another/abc /ss
+unmountvfs vfs1
+mountvfs vfs1
+deletedir /another/abc/ss
+movedir /another/abc /as
+removefile /abc/another/xxx.txt
+addfile /another xxx.txt /usr/include/filedesc.h
+searchfile xxx /tmp/searchout.txt== ???
+unmountvfs vfs1

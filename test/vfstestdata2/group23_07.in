@@ -1,0 +1,16 @@
+createvfs vfs1 1024 
+movedir /dir11/dir12 /
+mountvfs vfs1
+makedir /dir11
+makedir /dir11 dir21
+makedir /dir11 dir21
+makedir /dir12
+makedir /dir11/dir21 dir31
+listdir
+makedir /dir11 dir22
+movedir /dir11/dir12
+listdir / 1 abc.txt
+movedir /dir11/dir16 /dir12
+listdir / 5 abc.txt
+listdir /dir 1 output.txt
+movedir /dir11/dir21 /

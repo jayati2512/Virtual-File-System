@@ -1,0 +1,20 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+listdir_FAILURE SOURCE_FILE_PATH_NOT_FOUND
+listfile_SUCCESS
+makedir_SUCCESS
+deletedir_SUCCESS
+deletedir_FAILURE CANNOT_FIND_SPECIFIED_PATH_OR_DIR
+addfile_SUCCESS
+removefile_SUCCESS
+makedir_SUCCESS
+exportfile_SUCCESS
+listfile_SUCCESS
+movefile_SUCCESS

@@ -1,0 +1,20 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+listdir_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+movedir_SUCCESS
+addfile_SUCCESS
+listdir_SUCCESS
+movefile_SUCCESS
+listdir_SUCCESS
+copyfile_SUCCESS
+deletedir_SUCCESS
+listdir_SUCCESS
+removefile_FAILURE: CANNOT_FIND_SPECIFIED_PATH_OR_FILE
+deletedir_FAILURE: CANNOT_FIND_SPECIFIED_PATH_OR_DIR
+listdir_SUCCESS
+unmountvfs_SUCCESS

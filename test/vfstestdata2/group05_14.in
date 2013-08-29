@@ -1,0 +1,16 @@
+createvfs vfs1
+mountvfs vfs1
+unmountvfs vfs1
+mountvfs vfs1
+deletedir /another/abc
+makedir /another/abc ss
+movedir /another/abc /as/aaa
+movedir /another /as/aaa
+deletedir
+deletedir /as/aaa/another
+updatefile /another/abc/one.txt 
+unmontvfs vfs2
+unmountvfs vfs1
+mountvfs vfs1
+listdir / 3 /tnp/jgr
+listdir /another 1 /tmp/gh/;;;;

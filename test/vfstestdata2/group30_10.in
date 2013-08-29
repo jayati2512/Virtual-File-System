@@ -1,0 +1,10 @@
+createvfs vfs 10
+mountvfs vfs
+makedir / vehicle
+makedir / transport
+listdir / 1 starting
+deletedir /transport
+addfile /vehicle vehicleInfo /usr/include/wait.h
+exportfile /vehicle/vehicleInfo /tmp
+copyfile /vehicle/vehicleInfo /transport/rail/platform
+listdir / 1 stop

@@ -1,0 +1,30 @@
+createvfs demo 1024
+mountvfs demo1
+mountvfs demo
+makedir /home/dir1/ newdir1
+makedir /home/dir1/ newdir2
+makedir /home/dir1/dir3/ newdir3
+listdir /home/dir1/ 0 /tmp/grp9_listdir0
+addfile /home/dir1/dir3/ newfile1.txt /usr/include/syscall.h
+listdir /home/dir1/ 1 /tmp/grp9_listdir1
+unmount demo
+createvfs demo 100
+mountvfs demo
+listfile /home/dir1/dir3/newfile1 /tmp/listfile_newfile1
+addfile /home/dir1/ newfile2.txt /usr/include/stab.h
+listfile /home/dir1/newfile2 /tmp/listfile_newfile2
+makedir /home
+makedir /home/dir1/ newdir3
+movedir /home/dir1/dir3/newdir3 /home/dir1/
+listdir /home/dir1/ 10 /tmp/grp9_listdir10
+deletedir /home/dir1/
+copyfile /home/dir1/dir3/ /home/dir1/dir3/newfile3
+addfile /home/dir1/ newfile4.txt /usr/include/syscall.h
+addfile /home/dir1/ /usr/include/stab.h
+addfile /home/dir1/ newfile6.txt /usr/include/syslog.h
+addfile /home/dir1/ newfile7.txt /usr/include/syscall.h
+addfile /home/dir1/ newfile8.txt /usr/include/ustat.h
+addfile /home/dir1/ newfile9.txt /usr/include/stab.h
+updatefile /home/dir1/newfile6 /usr/include/ustat.h
+removefile /home/dir1/newfile1
+unmountvfs demo

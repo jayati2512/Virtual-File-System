@@ -1,0 +1,16 @@
+Ignoring invalid command create
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+listdir_SUCCESS
+INVALID_CHARACTER_IN_DIRNAME
+movedir_SUCCESS
+DIRECTORY_ALREADY_EXISTS
+addfile_SUCCESS
+exportfile_SUCCESS
+DESTINATION_CANNOT_BE_FILE
+updatefile_SUCCESS
+listfile_SUCCESS
+unmountvfs_SUCCESS
+VFS_NOT_MOUNTED

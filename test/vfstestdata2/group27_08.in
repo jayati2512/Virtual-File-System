@@ -1,0 +1,29 @@
+createvfs ubuntufs 1000
+createvfs abcdefghijklmnopqrstuvwxyzabcde 100
+createvfs ubuntufs 1000
+unmountvfs ubuntufs
+mountvfs ubuntufs
+mountvfs win_fs 100
+makedir / home
+makedir /lib/init/ init_lib
+makedir /tmp/ /keyring
+unmountvfs ubuntufs
+makedir /tmp/ keyring
+mountvfs ubuntufs
+makedir /boot/grub/ windows
+makedir /tmp/grub/keyring/ orbit
+makedir /bin/bash/
+listdir / -1 /tmp/listdir.txt
+listdir / 1 /tmp/listdir.txt
+makedir /home/ user
+addfile /home/user/ user_info.h /usr/include/wait.h
+deletedir /home/user/
+exportfile /home/user/user_info.h /tmp/tmppEL2Rt
+unmountvfs ubuntufs
+mountvfs ubuntufs
+searchfile grub /tmp/pulse-5j8vlM7MVoYe/pid
+searchfile /home/user/user_info /tmp/user_info_search.txt
+movedir /tmp/grub/keyring/ /lib/init
+movedir /home/ /home/user/
+unmountvfs ubuntufs
+listdir / 0 /tmp/listdir2.txt

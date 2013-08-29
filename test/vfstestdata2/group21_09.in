@@ -1,0 +1,15 @@
+createvfs ab/c 1024
+createvfs xyz 1020
+mountvfs xyz
+makedir / newdir
+makedir /abc
+makedir /newdir/ sub2
+deletedir
+addfile /newdir abc.txt /usr/include/syscall.h
+addfile /newdir check.txt /usr/include/wait.h
+updatefile
+updatefile /newdir/abc.txt /usr/include/wait.h
+movefile /newdir/check.txt newdir1/abc.txt
+searchfile check.txt /tmp/abc.txt
+unmountvfs abc
+unmountvfs xyz

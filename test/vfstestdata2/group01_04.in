@@ -1,0 +1,11 @@
+createvfs test2 1024
+mountvfs test2
+makedir a/b/c/d/e/f/g/h/i/z
+deletedir /a/b/c/d/e/f/g/h 
+makedir / a/b/c/d/e/f/g/h/i/z
+deletedir /a/b/c/d/e/f/g/h
+listdir /a/b/c 0 /tmp/listdiroutput.txt
+unmountvfs test2
+mountvfs test2
+movedir /g/ /a/b/c
+unmountvfs test2

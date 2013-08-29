@@ -1,0 +1,9 @@
+createvfs createvfs
+createvfs demo 2
+mountvfs demo
+makedir /home/ b
+makedir /home/ c
+makedir /home/ d
+removefile
+listdir /home 3 /tmp/a.txt 
+unmountvfs demo

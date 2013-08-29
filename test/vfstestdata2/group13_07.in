@@ -1,0 +1,23 @@
+createvfs iiitb 1024
+mountvfs iiitb
+makedir /country
+makedir /account
+makedir /country india
+makedir /country america
+makedir /account checkingacc
+makedir /account savingacc
+makedir /account australia
+movedir /account/australia /country
+addfile /account/checkingacc acc.txt /user/include
+addfile /country/america ssn.txt /user/include
+listdir /country 5 /tmp
+listdir /country 0 /tmp
+addfile /country/savingacc hello.c /user/include
+listfile /country/savingacc/hello.c /tmp
+updatefile /country/america/ssn.txt /user/include
+exportfile /country/savingacc/hello.c /tmp/abc.c
+copyfile /country/america/ssn.txt
+removefile /country/america/ssn.txt
+searchfile ss /tmp
+unmountvfs iiitb
+deletedir /country/australia

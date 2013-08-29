@@ -1,0 +1,27 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_FAILURE INVALID_CHARACTER_IN_DIRNAME
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+listfile_SUCCESS
+movedir_FAILURE CANNOT_MOVE_PARENT_TO_CHILD_DIR
+movedir_SUCCESS
+listdir_FAILURE INVALID_FLAG
+listdir_SUCCESS
+deletedir_FAILURE CANNOT_FIND_SPECIFIED_DIR
+unmountvfs_SUCCESS
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+addfile_FAILURE FILE_TOO_LARGE
+addfile_SUCCESS
+makedir_SUCCESS
+copyfile_SUCCESS
+updatefile_FAILURE EXTERNAL_FILE_TOO_LARGE
+updatefile_SUCCESS
+exportfile_FAILURE CANNOT_EXPORT_DIR
+exportfile_SUCCESS

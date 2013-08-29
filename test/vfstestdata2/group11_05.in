@@ -1,0 +1,20 @@
+createvfs vf/h6 1024
+createvfs vfs6 1024
+mountvfs vfs6
+mountvfs vfs6
+makedir /usr/ hello
+makedir /usr/ hi
+deletedir /usr/ 
+addfile /usr/hello/ a.txt /usr/include/poll.h
+addfile /usr/hi/ a.txt /usr/include/poll.h
+listfile /usr/hello/ /tmp/vhs/aa.txt
+updatefile /usr/hello/a.txt b.txt
+movefile /usr/hello/a.txt
+addfile /usr/hello/ b.txt /usr/include/aliases.h
+copyfile /usr/hello/a.txt /tmp/b.txt
+copyfile /usr/hello/a.png /usr/hi/a.txt
+listdir /usr/hello/ /tmp/out.txt
+listdir /usr/hello/ 0 /tmp/out.txt
+movedir /usr/hello/ /usr/hi/
+movedir /usr/hello/ /usr/hi/
+unmountvfs vfs6

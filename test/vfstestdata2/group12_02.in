@@ -1,0 +1,15 @@
+createvfs TEST 102400
+createvfs TEST 10
+mountvfs TEST
+removefile /s/file1.txt
+makedir / first
+makedir / first
+makedir /first
+addfile /first/ add1.txt /usr/include/present1.txt
+unmountvfs TEST
+mountvfs TEST
+removefile 
+deletedir /first/
+listfile /first/add1.txt /tmp/listout.txt
+mountvfs TEST
+unmountvfs TEST

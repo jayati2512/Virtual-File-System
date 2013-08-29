@@ -1,0 +1,20 @@
+createvfs school
+createvfs school 20
+mountvfs school
+makedir /school teacher
+makedir /school student
+makedir /school 
+makedir /school subject
+addfile /school/subject math.txt /usr/include/syslog.h
+addfile /school/subject english.txt /usr/include/eicode.h
+addfile /school/student abc.txt /usr/include/ustat.h
+addfile /school/student def.txt /usr/include/wait.h
+addfile /school/teacher tone.txt /usr/include/ustat.h
+addfile /school/teacher ttwo.txt /usr/include/wait.h
+deletedir /school
+deletedir /school/student
+removefile /school/student/def.txt
+removefile /school
+removefile /school/student/abc.txt
+deletedir /school/student
+unmountvfs school

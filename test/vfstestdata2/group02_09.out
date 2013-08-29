@@ -1,0 +1,18 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+deletedir_FAILURE VFS_INSUFFICIENT_ARGUMENTS
+deletedir_FAILURE DIRECTORY_IS_NOT_EMPTY
+deletedir_FAILURE DIRECTORY_IS_NOT_EMPTY
+removefile_SUCCESS
+removefile_SUCCESS
+removefile_SUCCESS
+deletedir_SUCCESS
+unmountvfs_SUCCESS

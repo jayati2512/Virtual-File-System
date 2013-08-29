@@ -1,0 +1,10 @@
+createvfs /demo 23
+mountvfs demo
+makedir //home/ /b
+exportfile /home/ a /usr/include/stdio.h
+createvfs demo 234
+mountvfs demo
+makedir /home/ /b
+deletedir 323 
+copyfile /home/a /home/b/
+unmountvfs 

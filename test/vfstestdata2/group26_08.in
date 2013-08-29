@@ -1,0 +1,18 @@
+createvfs vfs1 20
+mountvfs
+listfile /home/ ab sample3
+mountvfs vfs1
+makedir /home/ dir1
+makedir /home/dir2/dir3 dir4
+addfile /home/dir1/ apple sample3
+addfile /home/dir2/ abc1 sample8
+addfile /home/dir2/ abc2 /usr/include/poll.h
+updatefile /home/dir1/abc1 hello 
+addfile /home/ abc3 sample3
+deletedir /home/dir2
+addfile /home/ 12/3 sample3
+removefile /home/abc4
+addfile /home/dir1/ 
+addfile /home/dir2/ abc2 sample3
+addfile /home/dir2/ abc8 sample3
+unmountvfs vfs1

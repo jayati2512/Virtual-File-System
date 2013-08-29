@@ -1,0 +1,19 @@
+createvfs project 1024
+createvfs hitachi 1024
+mountvfs project
+makedir /employee
+unmountvfs project
+addfile /employee abc.txt /user/include
+mountvfs project
+addfile /employee abc.txt /user/include
+makedir /worker
+makedir /worker parttime
+makedir /worker fulltime
+makedir /hitachi
+deletedir /hitachi
+searchfile ab /tmp
+copyfile /employee/abc.txt /worker
+updatefile /employee/abc.txt /user/include
+removefile employee/abc.txt
+removefile /employee/abc.txt
+searchfile ab /tmp

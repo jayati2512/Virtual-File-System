@@ -1,0 +1,24 @@
+createvfs DIWALI 1024
+unmountvfs DIWALI
+mountvfs DIWALI
+makedir / chotidiwali
+makedir /chotidiwali celebration
+makedir / kalipuja
+makedir /chotidiwali/celebration photos
+makedir /chotidiwali/celebration/photos
+unmountvfs DIWALI
+createvfs PONGAL 1024
+mountvfs PONGAL
+makedir / menu
+makedir /menu days
+movedir /menu/days  /catering
+makedir / celebration
+deletedir /photos
+makedir /celebration photos
+makedir /celebration/photos family
+makedir / guest new
+listdir /pongal/photos 0 output
+makedir /Festival 
+listdir /Festival/day
+addfile /Festival/day enjoy.txt
+movedir /Festival/day  /diwali/photos

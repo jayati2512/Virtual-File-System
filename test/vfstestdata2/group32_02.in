@@ -1,0 +1,50 @@
+createvfs grp./1000 0
+createvfs grp1000grp1000grp1000grp1000grp1000 1025
+createvfs grp1000 2000
+mountvfs 
+unmountvfs grp1000
+mountvfs grp1000
+createvfs grp1000 50
+listdir / /tmp/listdir_o1
+mountvfs grp1000
+mountvfs grp1001
+listdir / /tmp/listdir_o2
+mountvfs grp1000
+makedir /home/
+makedir /home/test1/ dir1
+makedir /user/test1/test1_1 dir1_1
+listdir / 3 /tmp/listdir_o3
+listdir / 0 /tmp/listdir_o3
+makedir /documents/
+makedir /downloads/
+makedir /etc/nc/
+makedir /data/
+makedir /documents/iiitb/nc/
+makedir /documents/iiitb/nc/networks/
+makedir /documents/iiitb/nc/communication/
+listdir /xyz 1 /tmp/listdir_o4
+deletedir /documents/iiitb/nc/
+deletedir /documents/iiit-b/nc/
+deletedir /documents/iiit-b/nc/file.txt
+movedir /home/ /user/move.txt
+movedir /documents/ /documents/iiitb/
+movedir /etc/nc/ /documents/iiitb/
+movedir /etc/networks/ /documents/iiitb/
+movedir /etc/nc/ /documents/iiitb/algo
+listdir / 1 /tmp/list_op2
+makedir /data/ 
+addfile /data/ da/ta1.txt /usr/bin/twistd
+addfile /data/ data1_new.txt /usr/bin/rvlc
+addfile /data/ data1_new.txt /usr/bin/twistd
+addfile /data/ ran.txt /usr/bin/ranlib
+exportfile /data/ /tmp/exportfile_o1.txt
+searchfile data.txt /tmp/search_output.txt
+unmountvfs vfs
+addfile /data/ da/ta1.txt /usr/bin/twi
+listfile /data/data1_.txt /tmp/listfile_o1.txt
+updatefile /data/data1.txt /usr/bin/ranlib
+updatefile /data/data10.txt /usr/bin/ranlib
+updatefile /data/data1.txt /usr/bin/rat
+removefile /text/work.txt
+unmountvfs grp1000
+addfile /data/ data1.txt /usr/include/poll.h

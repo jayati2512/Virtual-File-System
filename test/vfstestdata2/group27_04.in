@@ -1,0 +1,14 @@
+createvfs MYdemo 45
+makedir / home
+addfile /home/ abc.txt /usr/include/wait.h
+mountvfs MYdemo
+makedir / home
+makedir /home/ abc
+addfile /home/abc/ wait.txt /usr/include/wait.h
+addfile /home/abc/ stdio.txt /usr/include/stdio.h
+addfile /home/ wait.h /usr/include/wait.h
+addfile /home/ wait.h /usr/include/ustat.h
+listfile /home/wait.h /tmp/wait_listfile.txt
+listfile /home/abc/wait.txt /tmp/wait_listfile1.txt
+exportfile /home/wait.h /tmp/wait_exportfile.h
+unmountvfs MYdemo

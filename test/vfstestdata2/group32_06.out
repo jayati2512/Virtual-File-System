@@ -1,0 +1,8 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+createvfs_FAILURE INVALID_SIZE
+makedir_SUCCESS
+makedir_SUCCESS
+deletedir_FAILURE CANNOT_FIND_SPECIFIED_DIR
+unmountvfs_SUCCESS
+unmountvfs_FAILURE VFS_NOT_MOUNTED

@@ -1,0 +1,28 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+deletedir_FAILURE DIRECTORY_IS_NOT_EMPTY
+deletedir_SUCCESS
+addfile_SUCCESS
+addfile_FAILURE UNABLE_TO_CREATE_NEWFILE
+addfile_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+copyfile_FAILURE CANNOT_FIND_DESTINATIONPATH
+listdir_SUCCESS
+addfile_FAILURE FILE_ALREADY_EXISTS
+exportfile_FAILURE CANNOT_CREATE_OUTPUTFILE
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+movefile_FAILURE CANNOT_FIND_DESTINATION_PATH
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+removefile_FAILURE CANNOT_FIND_SPECIFIED_FILE
+removefile_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+listdir_SUCCESS
+unmountvfs_SUCCESS

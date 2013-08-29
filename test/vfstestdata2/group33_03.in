@@ -1,0 +1,12 @@
+createvfs demo 
+createvfs demo 1024
+mountvfs demo1
+mountvfs demo
+makedir / usr
+makedir /usr/ dir1
+addfile
+addfile /usr/ file1.txt /usr/include/stdlib.h
+addfile /usr/ ad/d.txt /usr/include/stdio.h
+listfile /usr/file1.txt /tmp/file2.txt
+removefile
+removefile /usr/file1.txt

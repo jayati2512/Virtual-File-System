@@ -1,0 +1,17 @@
+createvfs student_details 30
+mountvfs student_details
+makedir /student_details name
+makedir /student_details subject
+makedir /student_details sem
+makedir /student_details grade
+addfile /student_details/name ann.txt /usr/include/syslog.h
+addfile /student_details/subject tom.txt /usr/include/wait.h
+addfile /student_details/sem harry.txt /usr/include/syscall.h
+addfile /student_details/grade elle.txt /usr/include/ustat.h
+movefile /student_details/subject/tom.txt /student_details/name
+movefile /student_details/subject/
+movefile /student_details/sem/harry.txt /student_details/name/tom.txt
+movefile /student_details/sem/harry.txt /student_details/name
+movefile /student_details/grade/hello.txt /student_details/name
+movefile /student_details/grade/elle.txt /student_details/name
+unmountvfs student_details

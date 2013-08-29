@@ -1,0 +1,17 @@
+createvfs myvfs4 
+createvfs myvfs4 1024
+mountvfs myvfs4
+makedir usr hello
+makedir /usr/ hello
+movedir /usr/hello/ /tmp/a.txt
+addfile /usr/hello/ a.txt /usr/include/poll.h
+addfile /usr/hello/ a.txt /usr/include/vfs.txt
+listfile /usr/hello/ /tmp/out.txt
+updatefile /usr/hello/a.txt /usr/include/poll.h
+movefile /usr/hello/a.txt /usr/hello/b.txt
+deletedir /usr/hello/ 
+makedir /usr hello/
+addfile /usr/hello/ a.txt /usr/include/poll.h
+exportfile /usr/hello/ /tmp
+unmountvfs myvfs4
+makedir /usr/ hello

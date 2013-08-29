@@ -1,0 +1,11 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+listdir_SUCCESS
+Ignoring invalid command unmontvfa
+unmountvfs_SUCCESS

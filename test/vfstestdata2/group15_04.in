@@ -1,0 +1,16 @@
+createvfs myvfs 900
+mountvfs myvfs 
+makedir / folder1
+makedir /abc folder2
+makedir /temp
+makedir /san a/nt 
+deletedir /qwer
+movedir /abc /folder1
+movedir /abc /dan
+addfile /folder2 fil_1.txt /usr/include/stdio.h
+removefile /folder/fil_1.txt 
+listfile /folder/fil_1.txt /tmp/lisfil.txt
+addfile /folder2 fil_1.txt /usr/include/stdio.h
+addfile /folder2 fil_2 /usr/include/conio.h
+addfile /folder3 fil_1.txt /usr/include/conio.h
+listfile /folder2/fil_2 /tmp/include/lisfil2.txt

@@ -1,0 +1,25 @@
+createvfs 1300asdfghjkl;'/.,mnbvcf%^U!@#$ 1024
+createvfs !@#$%^&*()_+ 1
+mountvfs !@#$%^&*()_+
+makedir / dir1
+makedir /dir1/ dir/
+unmountvfs !@#$%^&*()_+
+createvfs 1301 7
+mountvfs 1301
+unmountvfs 1301
+listdir / 0 /tmp/op_03_listdir
+mountvfs 1301
+makedir / dir
+makedir /dir/ dir
+makedir /dir/dir/ dir
+makedir /dir/dir/dir/ dir
+movedir / /dir/
+makedir /dir/dir/dir/dir/ dir
+movedir /dir/dir/dir/ /dir/dir/
+addfile /dir/ dir.txt /usr/include/wait.h
+addfile /dir/dir/ a.txt /usr/include/poll.h
+addfile / ad.txt /usr/include/poll.h
+deletedir /dir/dir/dir/dir/dir
+copyfile /dir/dir.txt /dir/dir/dir/a.txt
+makedir / dir1
+unmountvfs 1300

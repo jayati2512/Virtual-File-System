@@ -1,0 +1,22 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+movedir_SUCCESS
+movedir_FAILURE CANNOT_FIND_SPECIFIED_SOURCEDIR 
+deletedir_FAILURE DIRECTORY_IS_NOT_EMPTY 
+listdir_FAILURE   VFS_INSUFFICIENT_ARGUMENTS 
+searchfile_FAILURE VFS_INSUFFICIENT_ARGUMENTS 
+searchfile_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+copyfile_SUCCESS
+updatefile_SUCCESS
+removefile_FAILURE VFS_INSUFFICIENT_ARGUMENTS 
+removefile_SUCCESS
+unmountvfs_SUCCESS

@@ -1,0 +1,13 @@
+createvfs vfs 1024
+makedir / dir
+deletedir dir
+makedir /dir1
+movedir dir dir1
+listdir /dir 0 /usr/include/stdio.h
+addfile / input.txt /usr/include/stdio.h
+listfile /input.txt /tmp/output.txt
+updatefile /input.txt /usr/include/stdio.h
+removefile /input.txt
+searchfile input /tmp/output.txt
+exportfile /input.txt /tmp/output.txt
+unmount vfs

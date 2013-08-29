@@ -1,0 +1,30 @@
+unmountvfs vfs1
+createvfs vfs1 200
+createvfs vfs1 200
+createvfs vfs2 200
+mountvfs vfs1
+mountvfs vfs1
+mountvfs vfs2
+unmountvfs vfs1
+unmountvfs vfs1
+mountvfs vfs1
+unmountvfs ABC
+makedir /a/b/c/d/e/f/ g
+makedir / m/n/o
+makedir /m/n/ o
+listdir / 1 /tmp/listoutput.txt
+addfile /a/b/ file1.txt /usr/include/wait.h
+updatefile /a/b/file1.txt /usr/include/wait.h
+addfile /a/b/ file2.txt /usr/include/wait.h
+addfile /a/b/c/ FILE1.txt /usr/include/wait.h
+addfile /a/b/c/d/ File1.txt /usr/include/wait.h
+addfile /a/b/c/d/ File1.txt /usr/include/wait.h
+unmountvfs vfs1
+addfile /a/b/c/d/ file3.txt /usr/include/wait.h
+mountvfs vfs1
+addfile /a/b/c/d/ file3.txt /usr/include/wait.h
+addfile /a/b/c/d/ File1.txt /usr/include/wait.h
+addfile /a/b/c/d/ fileabcd.txt /usr/include/wait.h
+listfile /a/b/file1.txt /tmp/out_listfile1.txt
+listfile /a/b/filedoesnotexist.txt /tmp/out_listfile2.txt
+unmountvfs vfs1

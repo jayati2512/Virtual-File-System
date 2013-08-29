@@ -1,0 +1,27 @@
+createvfs vfs1 1000
+mountvfs vfs1
+makedir / root
+makedir /root d1
+makedir /root d2
+makedir /root/d1 d3
+makedir /root/d1 d4
+makedir /root/d2 d5
+makedir /root/d2 d6
+makedir /root/d1/d3 d7
+makedir /root/d1/d3 d8
+makedir                           
+makedir /root/d1 d3              
+addfile /root/d1 file1 /usr/include/stab.h
+addfile /root/d1 file2 /usr/include/stab.h
+addfile /root/d1 file2 /usr/include/stab.h
+addfile 
+addfile /root/d1/d3 file3 /usr/include/stab.h
+addfile /root/d1/d3 file4 /usr/include/stab.h
+deletedir /root/d1/d3           
+deletedir /root/d2/d5
+movedir /root/d2/d6 /root/d1/file1
+movedir /root/d2/d6 /root/d1
+listfile /root/d1/file1 /tmp/output_listfile.txt
+listdir /root/d1 0 /tmp/output_listdir.txt
+searchfile file /tmp/output_searchfile.txt
+unmountvfs vfs1

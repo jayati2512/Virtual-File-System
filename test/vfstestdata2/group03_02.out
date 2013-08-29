@@ -1,0 +1,13 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+addfile_FAILURE FILE_TOO_LARGE
+addfile_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+listdir_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+movedir_SUCCESS
+listdir_SUCCESS
+unmountvfs_SUCCESS

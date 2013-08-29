@@ -1,0 +1,17 @@
+unmountvfs demo
+createvfs demo 
+createvfs demo 1024
+mountvfs demo
+makedir / dev
+makedir / dev
+makedir / opt
+makedir /dev block
+movedir /dev /dev/block
+addfile /dev/block myinput /usr/include/input1.txt
+addfile /dev/block myinput /usr/include/input1.txt
+listfile /dev/block
+updatefile /usr/include/input2.txt
+updatefile /dev/block /usr/include/input2.txt
+updatefile /dev/block/temp /usr/include/input2.txt
+removefile /dev/block/myinput
+searchfile in /temp/output1.txt

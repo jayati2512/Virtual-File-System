@@ -1,0 +1,19 @@
+createvfs myvfs 2048
+createvfs myvfs/ 1024
+createvfs myvfsssssssssssssssssssssssssssss
+create myvfs 1024
+mountvfs
+mountvfs myvfs
+makedir /dir1
+makedir / dir1
+makedir /dir1 dir2
+deletedir
+deletedir /home/dir3
+addfile /dir1 out.txt /usr/include/a.txt
+addfile /dir1/dir2 test.jpg /usr/include/b.txt
+makedir / home
+movedir /home 
+movedir /dir1 /dir1/dir2
+movedir /dir1 out.txt
+listfile /dir1/dir2/test.jpg /tmp/temp.txt 
+unmount myvfs 

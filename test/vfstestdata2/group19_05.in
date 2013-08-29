@@ -1,0 +1,23 @@
+createvfs example1 2
+mountvfs example1
+makedir / dir1
+makedir / dir2
+search 
+listdir / 2 /temp/abc.txt
+mountvfs example1
+makedir 
+makedir / /di//r2
+movedir /dir1 /dir2
+movedir /dir1 /dir2
+deletedir /dir3
+addfile /dir1 math.h /user/stdlib.h
+addfile /dir1 math.h /user/stdlib.h
+makedir / dir1
+unmountvfs example1
+deletedir /dir2
+createvfs exampl2
+mountvfs exampl2
+makedir / dir1
+makedir / $#@
+unmountvfs exampl2
+unmountvfs exampl2

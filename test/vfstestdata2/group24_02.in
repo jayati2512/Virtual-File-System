@@ -1,0 +1,17 @@
+createvfs TestTestTestTestTestTestTestTest 102
+createvfs TestTestTest/TestTestTest 102
+createvfs test 512
+mountvfs test
+makedir /root/sub2/sub3 sub4
+makedir /root/sub1/sub3 sub4
+makedir /root/sub2/sub3\sub4
+movedir /root/sub1 /root/sub
+addfile /root/sub1 dataFile.txt /usr/include/dataFile.txt
+movedir /root/sub1/dataFile.txt /root/sub2
+deletedir /root/sub2.
+listdir root 2 /tmp/listDir.txt
+addfile /root/sub1 dataFi*le.txt /usr/include/dataFile.txt
+listfile /root/sub1/dataFile /tmp/listFile
+updatefile /root/sub1/dataFile.txt res/updationFile.txt/
+movefile /root/sub1/dataFile.txt /root/sub1/dataFile.txt
+copyfile /root/sub1/dataFile.txt

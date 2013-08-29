@@ -1,0 +1,11 @@
+createvfs test 100
+mountvfs test
+addfile /a/ trial.txt /usr/include/demo1.txt
+makedir / a
+addfile /a/ cis.h /usr/include/syscall.h
+removefile /a/cis.h
+searchfile cis /tmp/op1.txt
+unmountvfs test
+unmountvfs test
+mountvfs test
+listdir / -5 /tmp/op2.txt

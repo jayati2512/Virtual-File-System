@@ -1,0 +1,25 @@
+createvfs /iiitb 1024
+createvfs aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 1024
+createvfs
+createvfs myvfs 2024
+createvfs myvfs 3
+mountvfs /myvfs
+mountfvfs myvfs
+makedir / home
+mountvfs myvfs
+makedir / home
+makedir / home
+makedir /home temp
+deletedir
+deletedir bin
+movedir /bin home
+addfile /home file1 /usr/include/wait.h
+addfile /home file2 /usr/include/wait.h
+listfile /home/file2 /tmp/listfile.txt
+listfile /home/file1 /tmp/listfile.txt
+removefile /home/file1
+exportfile /home/file1 /tmp/exportfile.txt
+exportfile /home /tmp/xportfile.txt
+searchfile ho 
+searchfile ho /tmp/searchfile.txt
+unmountvfs myvfs

@@ -1,0 +1,18 @@
+mountvfs demo2
+makedir /home
+createvfs demo2 512
+mountvfs demo2
+addfile / ser /home/usr/Desktop/input.txt
+makedir /home/ab/cd one
+makedir /home/sr/lm thr/w
+makedir /home/sr/lm three
+listdir /home/lm 1 /tmp/test
+listdir /home
+movedir /ab /lm
+movedir /lm /post
+deletedir /home/cp
+deletedir /home/sr/lm/three
+deletedir /home/ab
+listdir /home 4 /tmp/test1
+listdir /home 0 /tmp/test1
+unmountvfs demo2

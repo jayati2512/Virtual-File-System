@@ -1,0 +1,10 @@
+createvfs demo 40
+mountvfs demo
+makedir /institute/college/iiit/imtech/comp.sci/python marks
+makedir /institute/college/iiit/imtech embedded_systems
+makedir /institute/college/iiit/imtech/comp.sci/python faculty
+addfile /institute/college/iiit/imtech/comp.sci cse /usr/include/stdio.h
+movedir /institute/college/iiit/imtech/comp.sci/python/faculty /institute/college/iiit/imtech/comp.sci/cse
+addfile /institute/college/iiit/imtech/comp.sci/cse junkfile /usr/include/stdlib.h
+listdir /institute/college 1 /tmp/listout4
+unmountvfs demo

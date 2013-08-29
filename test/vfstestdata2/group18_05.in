@@ -1,0 +1,21 @@
+createvfs fs5 800
+mountvfs fs5
+makedir / dir1
+addfile /dir1 file1.txt /usr/include/stab.h
+makedir /dir1 /dir2/
+addfile /dir1 file1.txt /usr/include/stab.h
+makedir / dir2
+makedir / dir3
+searchfile /dir1/file1.txt /tmp/output_searchfile.txt
+listfile /dir1 out.txt
+listdir / 1 /tmp/output_listdir.txt
+movedir /dir1/dir2 /
+exportfile /dir1/file1.txt /tmp/output_exportfile.txt
+makedir /dir1
+copyfile /dir1/file1.txt /dir2/f2.txt
+copyfile /dir1 /dir2/f2.txt
+listdir / 1 /tmp/output_listdir.txt
+unmountvfs fs5
+addfile / file2.txt /home/dataFile3.txt
+listdir / 1 out.txt
+unmountvfs fs5

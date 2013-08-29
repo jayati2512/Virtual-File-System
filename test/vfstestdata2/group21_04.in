@@ -1,0 +1,10 @@
+createvfs ab 
+createvfs xyz 123
+mountvfs ab
+makedir / newdir
+addfile /newdir adding.txt /tmp/
+unmount ab
+mountvfs xyz
+makedir / newdir
+addfile /newdir adding.txt /usr/include/wait.h
+unmountvfs xyz

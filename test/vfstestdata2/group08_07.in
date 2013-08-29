@@ -1,0 +1,20 @@
+createvfs vfs08
+mountvfs vfs
+unmountvfs vfs
+createvfs vfs08 1024
+mountvfs vfs08
+makedir /home/dev dev1
+listdir /home 0 /tmp/listdiroutput
+unmount vfs08
+deletedir /home/dev
+mountvfs vfs08
+deletedir /home/dev
+deletedir /home/dev/dev1
+makedir /home/dev dev3
+addfile /home/dev3/ err.txt /usr/include/wait.h 
+addfile /home/dev/dev3/ e/rr.txt /usr/include/wait.h 
+addfile /home/dev/ Mirror.txt /usr/include/wait.h 
+addfile /home/dev/dev3/ Mirror2.txt /usr/include/ustat.h 
+addfile /home/dev/dev3/ mirror.txt /usr/include/sudo_plugin.h
+searchfile abc /temp/searchoutput
+searchfile Mir /temp/searchoutput

@@ -1,0 +1,11 @@
+createvfs vfs1 20
+mountvfs vfs1
+makedir /home/dir1/ dir2
+makedir /home/dir1/ dir2
+mountvfs vfs1
+addfile /home/dir3/ apple /user/include/input1.txt
+addfile /home/dir3 apple /user/include/input1.txt
+unmountvfs vfs1
+mountvfs vfs1
+listfile /home/dir3/ apple /tmp/listfile1.txt
+unmountvfs vfs1

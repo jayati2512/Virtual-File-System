@@ -1,0 +1,26 @@
+createvfs VFS25_01 0
+createvfs VFS25_01_v1 1024 
+createvfs VFS25_01 10 
+createvfs VFS25_01a 
+createvfs VFS/25_01a
+createvfs abcdefghijklmnopqrstuvwxyz_VFS25
+makedir / a/b 	
+deletedir /a/b/c   
+movedir /a/b/c/ /a/aa/ 
+listdir /a/ 1 /tmp/listdir_output.txt
+addfile /a/aa/ add6.txt /usr/include/values.h 
+listfile /a/aa/add1.txt /tmp/listfile_output.txt
+updatefile /a/aa/Add3.doc /usr/include/wait.h 
+removefile /a/aa/add1.txt  		
+movefile /a/aa/add1.txt /a/aa/bb/ 
+copyfile /a/aa/bb/add1.txt /a/aa/bb/cc/ 
+exportfile /a/aa/add1.txt /tmp/ 		
+searchfile ab /tmp/searchfile_output.txt 
+mountvfs dummyVFS 
+mountvfs VFS25_01 
+mountvfs VFS25_01 
+mountvfs 
+unmountvfs VFS25_01 
+unmountvfs  	
+unmountvfs dummyVFS
+unmountvfs VFS25_01_v1

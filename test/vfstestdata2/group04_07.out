@@ -1,0 +1,21 @@
+createvfs_SUCCESS
+createvfs_FAILURE DATA_FILE_ALREADY_EXISTS
+mountvfs_SUCCESS
+unmountvfs_SUCCESS
+makedir_FAILURE VFS_NOT_MOUNTED
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+deletedir_FAILURE DIRECTORY_NOT_EMPTY
+addfile_SUCCESS
+addfile_SUCCESS
+removefile_SUCCESS
+unmountvfs_SUCCESS
+addfile_FAILURE VFS_NOT_MOUNTED
+mountvfs_SUCCESS
+addfile_SUCCESS
+updatefile_SUCCESS
+movefile_SUCCESS
+exportfile_FAILURE VFS_INSUFFICIENT_ARGUMENT 
+searchfile_FAILURE CANNOT_FIND_SOURCE_FILE
+unmountvfs_SUCCESS

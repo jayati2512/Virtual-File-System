@@ -1,0 +1,34 @@
+mountvfs test10
+createvfs /test10 100
+createvfs test10 -199
+createvfs test10 100
+unmountvfs test10
+mountvfs test10
+unmountvfs test10
+makedir / etc
+mountvfs test10
+makedir / tmp
+makedir / boot
+makedir / usr
+makedir / etc/
+makedir /etc/ jack
+makedir /etc/animals/ dog
+makedir /etc/animals/ horse
+makedir /etc/animals/human/ jack
+makedir /etc/animals/human/ bob
+addfile /tmp body.h /usr/include/abc.h/abc
+addfile /tmp legs.h /usr/include/wait.h
+exportfile /tmp/body.h /tmp/tmppEL2Rt
+exportfile /tmp/legs.h /tmp/tmppEL2Rt.h
+copyfile /tmp/body.h /tmp/legs.h
+addfile /tmp/body.h /usr/include/abc.h
+deletedir /tmp/
+deletedir /boot/
+movedir /usr/ /etc/animals
+listdir /etc/ 1 /tmp/etcdirs1.txt
+listdir /etc/ 0 /tmp/etcdirs0.txt
+searchfile /etc/animals/human/jack /tmp/alphabetagama.txt
+searchfile jack /tmp/pulse-5j8vlM7MVoYe/pid
+listfile /tmp/legs.h /tmp/listlegs.h
+listfile /tmp/body.txt /tmp/listbody.txt
+unmountvfs test10

@@ -1,0 +1,26 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+createvfs_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+unmountvfs_FAILURE VFS_NOT_MOUNTED
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+searchfile_SUCCESS 2
+deletedir_FAILURE DIRECTORY_IS_NOT_EMPTY
+deletedir_SUCCESS
+searchfile_SUCCESS 1
+addfile_SUCCESS
+addfile_SUCCESS
+copyfile_FAILURE CANNOT_FIND_DESTINATIONPATH
+copyfile_FAILURE CANNOT_FIND_DESTINATIONPATH
+removefile_SUCCESS
+movedir_FAILURE VFS_INSUFFICIENT_ARGUMENTS
+unmountvfs_FAILURE VFS_NOT_MOUNTED
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_FAILURE DIRECTORY_ALREADY_EXISTS
+addfile_SUCCESS
+unmountvfs_SUCCESS

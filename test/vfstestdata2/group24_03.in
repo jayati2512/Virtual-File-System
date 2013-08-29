@@ -1,0 +1,19 @@
+createvfs company 512
+mountvfs company
+makedir / /ceo
+makedir /ceo coo
+makedir /ceo manager
+makedir /ceo/manager finance
+makedir /ceo managingdirector
+makedir /ceo secretary
+makedir /ceo/coo list
+deletedir /ceo/manager
+listdir /ceo 0 listdirectory
+listdir /ceo generalmanager
+list /ceo abc listdirectory
+addfile /ceo _qwe.txt /usr/include/teoll.h
+addfile /ceo records.txt /usr/include/teoll.h
+searchfile records.txt searched.txt
+addfile /ceo/coo monthly_salary /usr/include/teoll.h
+unmountvfs companys
+unmountvfs company

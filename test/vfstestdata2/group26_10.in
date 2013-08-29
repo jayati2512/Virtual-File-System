@@ -1,0 +1,8 @@
+createvfs vfs1 20
+unmountvfs
+unmountvfs vfs
+mountvfs vfs2
+mountvfs vfs1
+mountvfs vfs1
+unmountvfs vfs1
+unmountvfs vfs1

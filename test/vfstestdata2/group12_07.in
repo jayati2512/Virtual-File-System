@@ -1,0 +1,19 @@
+createvfs time 2048
+mountvfs time
+makedir /origin/ original
+makedir / download
+makedir /download/ folder1
+deletedir /download/folder1/
+addfile /download/ file1.txt /usr/include/
+addfile /origin/original/ file3.txt /usr/include/
+removefile /download/ file1.txt
+removefile /download/ file1.txt
+addfile /download/ file0.txt /usr/include/
+movedir /origin/original/ /download/
+listdir /download/ 0 /usr/inlude/list.txt
+addfile /download/ file2.txt /usr/include/
+updatefile /download/file2.txt /usr/include/list2.txt
+movefile /download/file2.txt /orign/original/file3.txt
+exportfile /download/file2.txt /usr/include/
+searchfile file0 output.txt
+unmountvfs demo

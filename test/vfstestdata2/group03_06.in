@@ -1,0 +1,12 @@
+createvfs demo 100
+mountvfs demo
+makedir /d1/d2/d3/d4/d5/d6/d7/d8/d9 d10
+addfile / file /usr/include/stab.h
+addfile /d1 abc /usr/include/stab.h
+movefile /file /d1/d2/d5
+listfile /d1/abc /tmp/output_list_file.txt
+listdir / 1 /tmp/output_list_dir.txt
+copyfile /d2/d5/dab /d3/d7/file1
+deletedir /d1/d4
+removefile /d1/abc
+unmountvfs demo

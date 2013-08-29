@@ -1,0 +1,22 @@
+createvfs BUSINESS 1024
+mountvfs BUSINESS
+makedir /employee/
+makedir /employee/ officer
+makedir /employee/ secretary
+makedir /employee/ tailer
+makedir /employee/tailer/ worker
+makedir /employee/secretary/ asst
+deletedir /employee/secretary/       
+listdir /employee/ 0 /usr/include/salary.txt
+listdir /employee/manager/ 0 /usr/include/present.txt 
+listdir /employee/secretary/ ab /usr/include/age.txt   
+addfile /employee/ records.txt /usr/include/stdio.h
+searchfile se searched.txt
+addfile /employee/officer/ salary.txt /usr/include/stdio.h
+removefile /employee/officer/   
+unmountvfs BUSINESS
+makedir /employee/ officer     
+makedir /employee/ tailer     
+listdir /employee/ 0 /usr/include/salary.txt                   
+listdir /employee/secretary/ 0 /usr/include/age.txt           
+movefile /employee/worker/ ROOT/employee/officer/  

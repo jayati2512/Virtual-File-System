@@ -1,0 +1,30 @@
+unmountvfs demo1
+makedir /folder folder4
+makedir / folder
+mountvfs demo1
+createvfs demo1 10264
+createvfs demo1 1024
+createvfs test 1024
+unmountvfs demo1
+mountvfs demo1
+mountvfs test
+makedir /folder
+makedir /folder3
+makedir /folder folder1
+makedir /folder3 folder4
+deletedir /folder3/folder4
+makedir /folder/folder1 folder2
+addfile /folder/folder1/folder2/ hello.txt /usr/include/input.txt
+addfile /folder/folder1/folder2/ hello.txt /usr/include/input.txt
+addfile /folder3/folder4/ xyz.txt /usr/include/input2.txt
+addfile /folder3/folder4/ /xyz.txt /usr/include/input2.txt
+removefile /folder3/folder4/folder5/xyz.txt 
+removefile /folder3/folder4/xyz.txt 
+unmountvfs demo1
+mountvfs demo1
+copyfile abcgsdfds /folder/folder1/folder2/hello.txt  
+copyfile /folder/folder1/folder2/hello.txt /folder/folder1
+copyfile /folder/folder1/folder2/hello.txt 
+searchfile hello.txt /usr/op.txt
+unmountvfs test
+unmountvfs demo1

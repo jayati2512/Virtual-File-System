@@ -1,0 +1,20 @@
+createvfs vfs2 1024
+mountvfs vfs2
+makedir / pdir1
+makedir /pdir1 mzdir1
+makedir / fdir2
+makedir /pdir1/mzdir1 ghcdir1
+makedir /fdir2 tqdir2
+searchfile xyzfile1.txt searchresult.txt
+addfile /fdir2 ssfile2.txt input1.txt
+addfile /fdir2/tqdir2 kdafile2.doc input2.txt
+listfile /fdir2/tqdir2/kdafile2.doc listresult.txt
+exportfile /fdir2/tqdir2/kdafile2.doc
+exportfile /fdir2/tqdir2 exportresult1.txt
+listfile /fdir2/ssfile2.txt listresult.txt
+exportfile /fdir2/mnfile2.jpeg exportresult2.txt
+addfile /fdir2 mnfile2.txt input2.txt
+exportfile /fdir2/mnfile2.jpeg exportresult2.txt
+unmountvfs vfs2
+addfile /fdir2/tqdir2 gbfile2.doc input2.txt
+exportfile /fdir2/mnfile2.jpeg exportresult2.txt

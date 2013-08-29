@@ -1,0 +1,24 @@
+createvfs demo -1024
+createvfs abc 100
+mountvfs 
+mountvfs abc
+makedir / newdir
+makedir /newdir/ sub3
+makedir /newdir/ sub4
+deletedir /newdir/sub4
+movedir /newdir/sub3 /newdir
+addfile /newdir adding.txt /usr/include/
+addfile /newdir/sub2 add//ing.txt /include/paths.h
+addfile /newdir adding.txt /usr/include/paths.h
+addfile /newdir abc.txt /usr/include/
+listdir /newdir 1 /tmp/create_new.txt
+deletedir /newdir/sub3/sub4
+removefile  
+removefile /newdir1/adding.txt 
+movedir /newdir /newdir1
+movedir
+listdir 
+deletedir 
+updatefile /newdir/adding.txt /usr/include/added.txt
+unmountvfs 
+unmountvfs abc

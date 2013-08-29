@@ -1,0 +1,20 @@
+unmountvfs demo
+createvfs demo 700
+createvfs demo 1024
+mountvfs demo
+makedir /vehicle
+deletedir /vehicle
+makedir /transports
+makedir /vehicles
+makedir /vehicles 4wheeler
+makedir /vehicles 2wheeler
+makedir /vehicles/4wheeler car
+makedir /vehicles/4wheeler bus
+addfile /vehicles/2wheeler file.txt /user/include
+movefile /vehicles/file.txt /transports
+addfile /transports facto.txt /user/include
+updatefile /transports facto.txt 
+copyfile /transports/facto.txt
+removefile /transports/facto.txt
+searchfile /vehicles/2wheeler/file.txt
+unmountvfs demo

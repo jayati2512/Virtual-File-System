@@ -1,0 +1,30 @@
+createvfs_SUCCESS
+mountvfs_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_SUCCESS
+makedir_FAILURE DIRECTORY_ALREADY_EXISTS
+addfile_SUCCESS
+addfile_SUCCESS
+addfile_SUCCESS
+addfile_FAILURE FILE_ALREADY_EXISTS
+addfile_SUCCESS
+addfile_SUCCESS
+listdir_SUCCESS
+listfile_SUCCESS
+listfile_SUCCESS
+copyfile_SUCCESS
+unmountvfs_SUCCESS
+createvfs_SUCCESS
+movefile_FAILURE VFS_NOT_MOUNTED
+mountvfs_SUCCESS
+mountvfs_FAILURE VFS_ALREADY_MOUNTED
+makedir_SUCCESS
+addfile_SUCCESS
+listfile_SUCCESS
+unmountvfs_SUCCESS
+mountvfs_SUCCESS
+listdir_SUCCESS
+unmountvfs_SUCCESS

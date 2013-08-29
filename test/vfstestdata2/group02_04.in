@@ -1,0 +1,28 @@
+createvfs numbe/rs 20
+createvfs numbers 20
+mountvfs numbers
+makedir /numbers real
+makedir /numbers complex
+makedir /numbers/complex some
+makedir /numbers/complex other
+makedir /numbers/complex rest
+addfile /numbers/real poll1.txt /usr/include/poll.h
+addfile /numbers/real wait1.txt /usr/include/wait.h
+addfile /numbers/real ustat1.txt /usr/include/ustat.h
+addfile /numbers/real poll2.txt /usr/include/poll.h
+addfile /numbers/real wait2.txt /usr/include/wait.h
+addfile /numbers/complex/some poll3.txt /usr/include/poll.h
+addfile /numbers/complex/other poll4.txt /usr/include/poll.h
+addfile /numbers/complex/other ustat2.txt /usr/include/ustat.h
+addfile /numbers/complex/rest ustat3.txt /usr/include/ustat.h
+addfile /numbers/complex/some ustat4.txt /usr/include/ustat.h
+searchfile real /tmp/userh.txt
+searchfile /
+searchfile poll /tmp/user0.txt
+searchfile ustat /tmp/hello.txt
+searchfile complex /tmp/user1.txt
+unmountvfs numbers
+searchfile two /tmp/user2.txt
+mountvfs numbers
+searchfile ustat /tmp/user3.txt
+unmountvfs numbers

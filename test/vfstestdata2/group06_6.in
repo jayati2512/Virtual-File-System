@@ -1,0 +1,21 @@
+mountvfs demo
+createvfs demo 100
+mountvfs vfs_demo
+mountvfs demo
+unmountvfs vfs_demo
+makedir /home/ subdir2 
+addfile /home/subdir2/ newfile1.txt /usr/include/poll.h
+listfile /home/subdir3/newfile1.txt /tmp/listfiles.txt
+mountvfs demo
+addfile /home/subdir2/ newfile1.txt /usr/include/poll.h
+listfile /home/subdir2/newfile1.txt /tmp/listfiles.txt
+makedir /home/ subdir2 
+makedir /home/ subdir3 
+addfile /home/subdir3/ newfile2.txt /usr/include/syscall.h
+searchfile newfile3.txt /tmp/searchfile1.txt
+searchfile newfile2.txt /tmp/searchfile1.txt
+unmountvfs demo
+searchfile newfile2.txt /tmp/searchfile1.txt
+mountvfs demo
+searchfile newfile2.txt /tmp/searchfile1.txt
+unmountvfs demo

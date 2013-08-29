@@ -1,0 +1,13 @@
+createvfs tenvfs 1024
+mountvfs tenvfs
+deletedir /ROOT/apple
+makedir /ROOT orange
+makedir /ROOT orange
+unmountvfs elevenvfs
+createvfs elevenvfs 1000
+mountvfs elevenvfs
+addfile /ROOT/orange orn.txt /usr/include/stdio.h
+listfile /ROOT/orange/orn.txt /temp/ln.txt
+updatefile /ROOT/orange/orng.txt /usr/include/stdio.h
+unmountvfs elevenvfs
+unmountvfs tenvfs
